@@ -29,31 +29,66 @@ export default function VoiceAssistant({ advisoryText, diseaseContext, language,
     }
   }, [advisoryText, language])
 
-  const speakText = (text) => {
+  const speakText = async (text) => {
     if (!('speechSynthesis' in window) || !text) return
+
     window.speechSynthesis.cancel()
 
-    const u = new SpeechSynthesisUtterance(text)
+    // Ensure voices are loaded asynchronously in Chrome/Edge
+    let voices = window.speechSynthesis.getVoices()
+    if (!voices || voices.length === 0) {
+      await new Promise((resolve) => {
+        const handler = () => {
+          voices = window.speechSynthesis.getVoices()
+          window.speechSynthesis.removeEventListener('voiceschanged', handler)
+          resolve()
+        }
+        window.speechSynthesis.addEventListener('voiceschanged', handler)
+        setTimeout(resolve, 300)
+      })
+      voices = window.speechSynthesis.getVoices() || []
+    }
+
     const langMap = { kn: 'kn-IN', hi: 'hi-IN', en: 'en-IN' }
     const targetLangCode = langMap[language] || 'en-IN'
+    const targetPrefix = language
+
+    const u = new SpeechSynthesisUtterance(text)
     u.lang = targetLangCode
-    u.rate = 0.92
+    u.rate = 0.95
     u.pitch = 1.0
 
-    // Pick best native Indic voice if available in browser
-    const voices = window.speechSynthesis.getVoices()
-    if (voices && voices.length > 0) {
-      const match = voices.find(
-        (v) => v.lang === targetLangCode || v.lang.replace('_', '-').startsWith(language)
+    // Pick best native Indic voice (Hindi / Kannada / English)
+    if (voices.length > 0) {
+      // 1. Exact match (e.g. 'hi-IN' or 'hi_IN')
+      let match = voices.find(
+        (v) => v.lang.toLowerCase().replace('_', '-') === targetLangCode.toLowerCase()
       )
-      if (match) u.voice = match
+      // 2. Prefix match (e.g. 'hi', 'kn')
+      if (!match) {
+        match = voices.find((v) => v.lang.toLowerCase().startsWith(targetPrefix))
+      }
+      // 3. Name match (e.g. 'Hindi', 'Kannada', 'Swara', 'Hemant', 'Google')
+      if (!match) {
+        const nameQuery = language === 'hi' ? 'hindi' : language === 'kn' ? 'kannada' : 'english'
+        match = voices.find((v) => v.name.toLowerCase().includes(nameQuery))
+      }
+      if (match) {
+        u.voice = match
+      }
     }
 
     u.onstart = () => setSpeaking(true)
     u.onend = () => setSpeaking(false)
     u.onerror = () => setSpeaking(false)
 
-    window.speechSynthesis.speak(u)
+    if (window.speechSynthesis.paused) {
+      window.speechSynthesis.resume()
+    }
+
+    setTimeout(() => {
+      window.speechSynthesis.speak(u)
+    }, 60)
   }
 
   const stopSpeaking = () => {
