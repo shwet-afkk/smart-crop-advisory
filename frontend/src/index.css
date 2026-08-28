@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-paddy-50 text-forest-900 font-body antialiased;
+  background-image:
+    radial-gradient(circle at 100% 0%, rgba(232, 163, 36, 0.10), transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(31, 77, 54, 0.08), transparent 45%);
+  background-attachment: fixed;
+}
+
+:focus-visible {
+  outline: 3px solid #E8A324;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCE7C9;
+  border-radius: 8px;
+}
+
+/* Print Optimization for Crop Health Report */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  header, footer, .no-print, button {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .app-card, .rounded-2xl {
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  .page-break-avoid {
+    page-break-inside: avoid;
+  }
+}

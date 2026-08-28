@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AgroVoice-XAI System Architecture Flowchart</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap');
+
+  @page {
+    size: A3 landscape;
+    margin: 10mm;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .canvas-container {
+    width: 1350px;
+    background: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 30px 40px;
+    box-sizing: border-box;
+  }
+
+  /* Header */
+  .chart-header {
+    text-align: center;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: #dcfce7;
+    color: #166534;
+    font-weight: 800;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #86efac;
+    margin-bottom: 10px;
+  }
+
+  .chart-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 900;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+  }
+
+  .chart-header p {
+    margin: 6px 0 0 0;
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 500;
+  }
+
+  /* Flow Grid */
+  .flow-grid {
+    display: grid;
+    grid-template-columns: 240px 40px 240px 40px 460px 40px 240px;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* Nodes & Columns */
+  .flow-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .arrow-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #15803d;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .flow-card {
+    background: #ffffff;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    position: relative;
+  }
+
+  .card-title {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card-body {
+    font-size: 11px;
+    color: #475569;
+    line-height: 1.45;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    margin-top: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Themed Cards */
+  .card-user {
+    border-color: #93c5fd;
+    background: #eff6ff;
+  }
+  .card-user .card-title { color: #1d4ed8; }
+  .card-user .tag { background: #dbeafe; color: #1e40af; }
+
+  .card-frontend {
+    border-color: #86efac;
+    background: #f0fdf4;
+  }
+  .card-frontend .card-title { color: #15803d; }
+  .card-frontend .tag { background: #dcfce7; color: #166534; }
+
+  .card-api {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+    border-left: 4px solid #0284c7;
+  }
+  .card-api .card-title { color: #0369a1; }
+  .card-api .tag { background: #e0f2fe; color: #0369a1; }
+
+  .card-ml {
+    border-color: #fca5a5;
+    background: #fff1f2;
+    border-left: 4px solid #e11d48;
+  }
+  .card-ml .card-title { color: #be123c; }
+  .card-ml .tag { background: #ffe4e6; color: #9f1239; }
+
+  .card-weather {
+    border-color: #fde047;
+    background: #fefce8;
+    border-left: 4px solid #ca8a04;
+  }
+  .card-weather .card-title { color: #a16207; }
+  .card-weather .tag { background: #fef9c3; color: #854d0e; }
+
+  .card-knowledge {
+    border-color: #c4b5fd;
+    background: #faf5ff;
+    border-left: 4px solid #7c3aed;
+  }
+  .card-knowledge .card-title { color: #6d28d9; }
+  .card-knowledge .tag { background: #f3e8ff; color: #5b21b6; }
+
+  .card-output {
+    border-color: #86efac;
+    background: #f0fdf4;
+    border-left: 4px solid #16a34a;
+  }
+  .card-output .card-title { color: #15803d; }
+  .card-output .tag { background: #dcfce7; color: #166534; }
+
+  /* Double Branch Box */
+  .dual-branch-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+
+  /* Footer Info */
+  .chart-footer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #64748b;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+
+<div class="canvas-container">
+  <!-- Title Header -->
+  <div class="chart-header">
+    <div class="badge">Major Project Phase II · Technical Architecture</div>
+    <h1>AgroVoice-XAI: End-to-End System Architecture Flowchart</h1>
+    <p>Visual Pipeline: From Farmer Leaf Capture &amp; GPS Telemetry to PyTorch XAI Inference, Microclimate Risk Triangulation &amp; Multilingual Prescriptions</p>
+  </div>
+
+  <!-- Flowchart Grid -->
+  <div class="flow-grid">
+    
+    <!-- STAGE 1: FARMER / INPUTS -->
+    <div class="flow-col">
+      <div style="font-size: 11px; font-weight: 800; color: #64748b; text-align: center; text-transform: uppercase; margin-bottom: -6px;">Stage 1: Ingestion</div>
+
+      <div class="flow-card card-user">
+        <div class="card-title">📷 Leaf Photo Capture</div>
+        <div class="card-body">Smartphone Camera Viewfinder or Gallery File Upload (.JPG / .PNG).</div>
+        <span class="tag">Input Tensor (RGB)</span>
+      </div>
+
+      <div class="flow-card card-user">
+        <div class="card-title">📍 GPS Geolocation</div>
+        <div class="card-body">HTML5 Geolocation API captures Latitude &amp; Longitude coordinates.</div>
+        <span class="tag">Coords (Lat, Lon)</span>
+      </div>
+
+      <div class="flow-card card-user">
+        <div class="card-title">🎙️ Farmer Voice Input</div>
+        <div class="card-body">Spoken queries in Kannada, Hindi, or English via browser microphone.</div>
+        <span class="tag">STT Acoustic Stream</span>
+      </div>
+    </div>
+
+    <!-- ARROW 1 -->
+    <div class="arrow-col">➔</div>
+
+    <!-- STAGE 2: CLIENT EDGE LAYER -->
+    <div class="flow-col">
+      <div style="font-size: 11px; font-weight: 800; color: #64748b; text-align: center; text-transform: uppercase; margin-bottom: -6px;">Stage 2: Client UI</div>
+
+      <div class="flow-card card-frontend">
+        <div class="card-title">⚡ React 18 + Vite SPA</div>
+        <div class="card-body">
+          • Torch &amp; Camera Switcher<br>
+          • Aspect Ratio Framing Guide<br>
+          • State &amp; Cache Manager
+        </div>
+        <span class="tag">Port: 5173 / HTTPS</span>
+      </div>
+
+      <div class="flow-card card-frontend">
+        <div class="card-title">🗣️ Web Speech Engine</div>
+        <div class="card-body">
+          • <code>SpeechRecognition</code> (STT)<br>
+          • <code>SpeechSynthesis</code> (TTS)<br>
+          • Native Indic Accent Binding
+        </div>
+        <span class="tag">kn-IN / hi-IN / en-IN</span>
+      </div>
+
+      <div class="flow-card card-frontend">
+        <div class="card-title">📦 Payload Serializer</div>
+        <div class="card-body">
+          Encodes multipart form-data (image bytes + coordinates + language).
+        </div>
+        <span class="tag">REST Fetch API</span>
+      </div>
+    </div>
+
+    <!-- ARROW 2 -->
+    <div class="arrow-col">➔</div>
+
+    <!-- STAGE 3: APPLICATION & DEEP LEARNING / METEOROLOGY -->
+    <div class="flow-col" style="gap: 12px;">
+      <div style="font-size: 11px; font-weight: 800; color: #64748b; text-align: center; text-transform: uppercase; margin-bottom: -6px;">Stage 3: Application Server &amp; AI Engines</div>
+
+      <!-- Gateway -->
+      <div class="flow-card card-api">
+        <div class="card-title">⚙️ FastAPI ASGI Gateway (Python 3.10+)</div>
+        <div class="card-body">
+          • <code>POST /api/analyze-crop</code> · <code>POST /api/voice-query</code> · <code>GET /api/weather-context</code><br>
+          • Multipart image decoding, validation &amp; tensor preprocessing ($224	imes 224	imes 3$, ImageNet norm).
+        </div>
+        <span class="tag">Uvicorn Port: 8000</span>
+      </div>
+
+      <!-- Parallel Execution Box -->
+      <div class="dual-branch-container">
+        
+        <!-- Branch A: ML & XAI -->
+        <div class="flow-card card-ml">
+          <div class="card-title">🧠 PyTorch MobileNetV2 (39 Taxa)</div>
+          <div class="card-body">
+            • <strong>Forward Pass:</strong> Inverted Residuals &amp; Depthwise Separable Convolutions.<br>
+            • <strong>Softmax Head:</strong> Class Probability (98.43% Val Acc).<br>
+            • <strong>Grad-CAM Hook:</strong> Gradients $lpha_k^c$ at <code>features[-1]</code> $ightarrow$ ReLU Saliency Map $ightarrow$ Jet Colormap Overlay.
+          </div>
+          <span class="tag">CUDA RTX 4060 / 22ms</span>
+        </div>
+
+        <!-- Branch B: Open-Meteo Risk -->
+        <div class="flow-card card-weather">
+          <div class="card-title">🌦️ Open-Meteo Microclimate Engine</div>
+          <div class="card-body">
+            • <strong>Live Ingestion:</strong> Temp (°C), Humidity (RH%), Rain (mm), Wind (km/h).<br>
+            • <strong>Disease Triangle Formulation:</strong><br>
+            $S_{	ext{Risk}} = S_{	ext{Base}} + \Delta S_{	ext{Hum}} + \Delta S_{	ext{Temp}} + \Delta S_{	ext{Rain}}$<br>
+            • Continuous Risk Score $(0-100)$ &amp; Trigger Extraction.
+          </div>
+          <span class="tag">WMO Grid 0.1° Res</span>
+        </div>
+
+      </div>
+
+      <!-- Knowledge Base & Voice Intent -->
+      <div class="flow-card card-knowledge">
+        <div class="card-title">📚 4-Pillar Clinical Knowledge Engine &amp; Indic NLP Parser</div>
+        <div class="card-body">
+          • <strong>Pillar 1:</strong> Etiology / Root Cause in Plain Terms · <strong>Pillar 2:</strong> Organic Biological Remedy (Neem oil, Gomutra, Buttermilk)<br>
+          • <strong>Pillar 3:</strong> Chemical Fungicide with 15L Backpack Pump Dosage &amp; PHI · <strong>Pillar 4:</strong> Cultural Prevention Practices<br>
+          • <strong>Voice Intent Classifier:</strong> Matches spoken queries $ightarrow$ Generates natural speech responses in Kannada, Hindi, and English.
+        </div>
+        <span class="tag">39 Verified Taxa · Multilingual JSON</span>
+      </div>
+    </div>
+
+    <!-- ARROW 3 -->
+    <div class="arrow-col">➔</div>
+
+    <!-- STAGE 4: ACTIONABLE FARMER OUTPUTS -->
+    <div class="flow-col">
+      <div style="font-size: 11px; font-weight: 800; color: #64748b; text-align: center; text-transform: uppercase; margin-bottom: -6px;">Stage 4: Farmer Deliverables</div>
+
+      <div class="flow-card card-output">
+        <div class="card-title">🔬 Explainable Visual Inspection</div>
+        <div class="card-body">Side-by-side Dual View of Original Photo &amp; AI Grad-CAM Lesion Heatmap.</div>
+        <span class="tag">Visual Trust / XAI</span>
+      </div>
+
+      <div class="flow-card card-output">
+        <div class="card-title">📋 4-Pillar Agronomic Card</div>
+        <div class="card-body">Etiology, Organic Remedies, Chemical 15L Pump Dosages, and Prevention Tabs.</div>
+        <span class="tag">Practical Prescriptions</span>
+      </div>
+
+      <div class="flow-card card-output">
+        <div class="card-title">🔊 Oral Voice Assistant</div>
+        <div class="card-body">Hands-free speech read-out and interactive voice Q&amp;A in native dialect.</div>
+        <span class="tag">Zero-Literacy Audio</span>
+      </div>
+
+      <div class="flow-card card-output">
+        <div class="card-title">🖨️ PDF &amp; WhatsApp Share</div>
+        <div class="card-body">Official Crop Doctor Health Card &amp; 1-tap WhatsApp message to shopkeeper.</div>
+        <span class="tag">Printable RX / Share</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="chart-footer">
+    <div>
+      <strong>Project Team:</strong> Shashwat Shaurya, Parth Verma, Shwetanshu, Kumar Vaibhav
+    </div>
+    <div>
+      <strong>Department:</strong> Computer Science &amp; Engineering, Sir MVIT, Bengaluru
+    </div>
+    <div>
+      <strong>Guide:</strong> Dr. Pallavi | <strong>HOD:</strong> Dr. Anitha T N | <strong>Principal:</strong> Dr. M N Thippeswamy
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

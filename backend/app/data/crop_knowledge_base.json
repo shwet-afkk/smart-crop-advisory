@@ -1,0 +1,1940 @@
+{
+  "Tomato___Early_Blight": {
+    "scientific_name": "Alternaria solani",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 70,
+      "temp_c_min": 22,
+      "temp_c_max": 30,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Early Blight",
+        "root_cause": "Fungal infection from continuous rains and humid air, causing leaves to turn brown, dry up, and burn at edges.",
+        "treatment_organic": "1. Spray fresh Cow Urine (Gomutra) 100 ml + 5 ml Neem oil mixed in 1 liter of water.\n2. Remove heavily burnt leaves and bury them.",
+        "treatment_chemical": "Spray Redomil Gold (Metalaxyl + Mancozeb) @ 2 grams per liter of water (30g in 15L pump) or Saaf @ 2g/L.",
+        "preventive_measures": [
+          "Do not let water log in field",
+          "Rotate crop with non-solanaceous crops",
+          "Keep field ridges clean and weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato Early Blight",
+        "root_cause": "ಮಳೆ ಮತ್ತು ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಾದಾಗ ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 100 ಮಿ.ಲೀ ಗೋಮೂತ್ರ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಹೆಚ್ಚು ಸುಟ್ಟಿರುವ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ರಿಡೋಮಿಲ್ ಗೋಲ್ಡ್ (Ridomil Gold) ಅಥವಾ ಸಾಫ್ (Saaf) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಹೋಗಲು ಕಾಲುವೆ ಮಾಡಿ",
+          "ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ",
+          "ಹೊಲದ ಬದುಗಳಲ್ಲಿ ಕಳೆ ಬೆಳೆಯದಂತೆ ನೋಡಿಕೊಳ್ಳಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato Early Blight",
+        "root_cause": "बारिश और अधिक नमी के कारण पत्तियां झुलसने लगती हैं और किनारों से सूखकर भूरी हो जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 100 मिली गोमूत्र और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. ज्यादा खराब पत्तियों को तोड़कर जमीन में दबा दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम रिडोमिल गोल्ड (Ridomil) या साफ (Saaf) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "खेत में पानी जमा न होने दें",
+          "फसल चक्र अपनाएं",
+          "मेड़ों को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Tomato___Late_Blight": {
+    "scientific_name": "Phytophthora infestans",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 85,
+      "temp_c_min": 10,
+      "temp_c_max": 22,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Late Blight",
+        "root_cause": "Fungal infection from continuous rains and humid air, causing leaves to turn brown, dry up, and burn at edges.",
+        "treatment_organic": "1. Spray fresh Cow Urine (Gomutra) 100 ml + 5 ml Neem oil mixed in 1 liter of water.\n2. Remove heavily burnt leaves and bury them.",
+        "treatment_chemical": "Spray Redomil Gold (Metalaxyl + Mancozeb) @ 2 grams per liter of water (30g in 15L pump) or Saaf @ 2g/L.",
+        "preventive_measures": [
+          "Do not let water log in field",
+          "Rotate crop with non-solanaceous crops",
+          "Keep field ridges clean and weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato Late Blight",
+        "root_cause": "ಮಳೆ ಮತ್ತು ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಾದಾಗ ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 100 ಮಿ.ಲೀ ಗೋಮೂತ್ರ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಹೆಚ್ಚು ಸುಟ್ಟಿರುವ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ರಿಡೋಮಿಲ್ ಗೋಲ್ಡ್ (Ridomil Gold) ಅಥವಾ ಸಾಫ್ (Saaf) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಹೋಗಲು ಕಾಲುವೆ ಮಾಡಿ",
+          "ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ",
+          "ಹೊಲದ ಬದುಗಳಲ್ಲಿ ಕಳೆ ಬೆಳೆಯದಂತೆ ನೋಡಿಕೊಳ್ಳಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato Late Blight",
+        "root_cause": "बारिश और अधिक नमी के कारण पत्तियां झुलसने लगती हैं और किनारों से सूखकर भूरी हो जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 100 मिली गोमूत्र और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. ज्यादा खराब पत्तियों को तोड़कर जमीन में दबा दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम रिडोमिल गोल्ड (Ridomil) या साफ (Saaf) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "खेत में पानी जमा न होने दें",
+          "फसल चक्र अपनाएं",
+          "मेड़ों को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Tomato___Healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Tomato",
+        "root_cause": "No disease or pest attack found. The Tomato leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Tomato ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Tomato ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Tomato की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Tomato की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Potato___Early_Blight": {
+    "scientific_name": "Alternaria solani",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 65,
+      "temp_c_min": 22,
+      "temp_c_max": 29,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Potato Early Blight",
+        "root_cause": "Fungal infection from continuous rains and humid air, causing leaves to turn brown, dry up, and burn at edges.",
+        "treatment_organic": "1. Spray fresh Cow Urine (Gomutra) 100 ml + 5 ml Neem oil mixed in 1 liter of water.\n2. Remove heavily burnt leaves and bury them.",
+        "treatment_chemical": "Spray Redomil Gold (Metalaxyl + Mancozeb) @ 2 grams per liter of water (30g in 15L pump) or Saaf @ 2g/L.",
+        "preventive_measures": [
+          "Do not let water log in field",
+          "Rotate crop with non-solanaceous crops",
+          "Keep field ridges clean and weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Potato Early Blight",
+        "root_cause": "ಮಳೆ ಮತ್ತು ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಾದಾಗ ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 100 ಮಿ.ಲೀ ಗೋಮೂತ್ರ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಹೆಚ್ಚು ಸುಟ್ಟಿರುವ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ರಿಡೋಮಿಲ್ ಗೋಲ್ಡ್ (Ridomil Gold) ಅಥವಾ ಸಾಫ್ (Saaf) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಹೋಗಲು ಕಾಲುವೆ ಮಾಡಿ",
+          "ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ",
+          "ಹೊಲದ ಬದುಗಳಲ್ಲಿ ಕಳೆ ಬೆಳೆಯದಂತೆ ನೋಡಿಕೊಳ್ಳಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Potato Early Blight",
+        "root_cause": "बारिश और अधिक नमी के कारण पत्तियां झुलसने लगती हैं और किनारों से सूखकर भूरी हो जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 100 मिली गोमूत्र और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. ज्यादा खराब पत्तियों को तोड़कर जमीन में दबा दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम रिडोमिल गोल्ड (Ridomil) या साफ (Saaf) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "खेत में पानी जमा न होने दें",
+          "फसल चक्र अपनाएं",
+          "मेड़ों को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Potato___Late_Blight": {
+    "scientific_name": "Phytophthora infestans",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 85,
+      "temp_c_min": 10,
+      "temp_c_max": 20,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Potato Late Blight",
+        "root_cause": "Fungal infection from continuous rains and humid air, causing leaves to turn brown, dry up, and burn at edges.",
+        "treatment_organic": "1. Spray fresh Cow Urine (Gomutra) 100 ml + 5 ml Neem oil mixed in 1 liter of water.\n2. Remove heavily burnt leaves and bury them.",
+        "treatment_chemical": "Spray Redomil Gold (Metalaxyl + Mancozeb) @ 2 grams per liter of water (30g in 15L pump) or Saaf @ 2g/L.",
+        "preventive_measures": [
+          "Do not let water log in field",
+          "Rotate crop with non-solanaceous crops",
+          "Keep field ridges clean and weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Potato Late Blight",
+        "root_cause": "ಮಳೆ ಮತ್ತು ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಾದಾಗ ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 100 ಮಿ.ಲೀ ಗೋಮೂತ್ರ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಹೆಚ್ಚು ಸುಟ್ಟಿರುವ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ರಿಡೋಮಿಲ್ ಗೋಲ್ಡ್ (Ridomil Gold) ಅಥವಾ ಸಾಫ್ (Saaf) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಹೋಗಲು ಕಾಲುವೆ ಮಾಡಿ",
+          "ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ",
+          "ಹೊಲದ ಬದುಗಳಲ್ಲಿ ಕಳೆ ಬೆಳೆಯದಂತೆ ನೋಡಿಕೊಳ್ಳಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Potato Late Blight",
+        "root_cause": "बारिश और अधिक नमी के कारण पत्तियां झुलसने लगती हैं और किनारों से सूखकर भूरी हो जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 100 मिली गोमूत्र और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. ज्यादा खराब पत्तियों को तोड़कर जमीन में दबा दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम रिडोमिल गोल्ड (Ridomil) या साफ (Saaf) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "खेत में पानी जमा न होने दें",
+          "फसल चक्र अपनाएं",
+          "मेड़ों को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Potato___Healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Potato",
+        "root_cause": "No disease or pest attack found. The Potato leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Potato ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Potato ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Potato की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Potato की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Corn___Common_Rust": {
+    "scientific_name": "Puccinia sorghi",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 16,
+      "temp_c_max": 24,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Corn Common Rust",
+        "root_cause": "Airborne fungal spores blowing in the wind that create reddish-orange powder spots on leaf undersides.",
+        "treatment_organic": "1. Spray 5 ml Neem oil mixed in 1 liter water.\n2. Dust organic sulfur powder lightly on leaves during morning.",
+        "treatment_chemical": "Spray Propiconazole 25% EC (Tilt) @ 1 ml per liter of water (15 ml in 15L pump) or Mancozeb @ 2g/L.",
+        "preventive_measures": [
+          "Remove volunteer weed plants around field",
+          "Plant rust-tolerant seed varieties",
+          "Do not over-apply nitrogen urea"
+        ]
+      },
+      "kn": {
+        "disease_name": "Corn Common Rust",
+        "root_cause": "ಗಾಳಿಯ ಮೂಲಕ ಹರಡುವ ರೋಗಾಣುಗಳಿಂದ ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಕೆಂಪು-ಕಿತ್ತಳೆ ಬಣ್ಣದ ತುಕ್ಕು ಪುಡಿಯಂತಹ ಮಚ್ಚೆಗಳು ಮೂಡುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಬೆಳಗಿನ ಜಾವ ಎಲೆಗಳ ಮೇಲೆ ಗಂಧಕದ ಪುಡಿಯನ್ನು (Sulfur) ಲಘುವಾಗಿ ಉದುರಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 1 ಮಿ.ಲೀ ಟಿಲ್ಟ್ (Tilt - Propiconazole) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಬೆನ್ನು ಪಂಪ್‌ಗೆ 15 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ಹೊಲದ ಸುತ್ತಮುತ್ತಲಿನ ಕಳೆಗಿಡಗಳನ್ನು ನಾಶಮಾಡಿ",
+          "ರೋಗ ನಿರೋಧಕ ಬೀಜಗಳನ್ನು ಬಳಸಿ",
+          "ಅತಿಯಾಗಿ ಯೂರಿಯಾ ಗೊಬ್ಬರ ಹಾಕಬೇಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Corn Common Rust",
+        "root_cause": "हवा से फैलने वाले फफूंद से पत्तियों के नीचे लाल-नारंगी रंग का जंग जैसा पाउडर जमा हो जाता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम का तेल मिलाकर छिड़कें।\n2. सुबह के समय पत्तियों पर सल्फर पाउडर का हल्का बुरकाव करें।",
+        "treatment_chemical": "1 लीटर पानी में 1 मिली टिल्ट (Tilt - Propiconazole) मिलाकर छिड़कें (15 लीटर स्प्रे टंकी में 15 मिली)।",
+        "preventive_measures": [
+          "खेत के आसपास के खरपतवार नष्ट करें",
+          "रोगरोधी किस्मों के बीज लगाएं",
+          "यूरिया की अधिक मात्रा न डालें"
+        ]
+      }
+    }
+  },
+  "Corn___Healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Corn",
+        "root_cause": "No disease or pest attack found. The Corn leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Corn ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Corn ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Corn की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Corn की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Pepper_Bell___Bacterial_Spot": {
+    "scientific_name": "Xanthomonas campestris pv. vesicatoria",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 24,
+      "temp_c_max": 30,
+      "rain_sensitive": true,
+      "wind_sensitive": false
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Pepper Bell Bacterial Spot",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Pepper Bell Bacterial Spot",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Pepper Bell Bacterial Spot",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Pepper_Bell___Healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Pepper Bell",
+        "root_cause": "No disease or pest attack found. The Pepper Bell leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Pepper Bell ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Pepper Bell ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Pepper Bell की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Pepper Bell की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Rice___Bacterial_Leaf_Blight": {
+    "scientific_name": "Xanthomonas oryzae pv. oryzae",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 25,
+      "temp_c_max": 34,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Rice Bacterial Leaf Blight",
+        "root_cause": "Fungal infection from continuous rains and humid air, causing leaves to turn brown, dry up, and burn at edges.",
+        "treatment_organic": "1. Spray fresh Cow Urine (Gomutra) 100 ml + 5 ml Neem oil mixed in 1 liter of water.\n2. Remove heavily burnt leaves and bury them.",
+        "treatment_chemical": "Spray Redomil Gold (Metalaxyl + Mancozeb) @ 2 grams per liter of water (30g in 15L pump) or Saaf @ 2g/L.",
+        "preventive_measures": [
+          "Do not let water log in field",
+          "Rotate crop with non-solanaceous crops",
+          "Keep field ridges clean and weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Rice Bacterial Leaf Blight",
+        "root_cause": "ಮಳೆ ಮತ್ತು ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಾದಾಗ ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 100 ಮಿ.ಲೀ ಗೋಮೂತ್ರ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಹೆಚ್ಚು ಸುಟ್ಟಿರುವ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ರಿಡೋಮಿಲ್ ಗೋಲ್ಡ್ (Ridomil Gold) ಅಥವಾ ಸಾಫ್ (Saaf) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಹೋಗಲು ಕಾಲುವೆ ಮಾಡಿ",
+          "ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ",
+          "ಹೊಲದ ಬದುಗಳಲ್ಲಿ ಕಳೆ ಬೆಳೆಯದಂತೆ ನೋಡಿಕೊಳ್ಳಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Rice Bacterial Leaf Blight",
+        "root_cause": "बारिश और अधिक नमी के कारण पत्तियां झुलसने लगती हैं और किनारों से सूखकर भूरी हो जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 100 मिली गोमूत्र और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. ज्यादा खराब पत्तियों को तोड़कर जमीन में दबा दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम रिडोमिल गोल्ड (Ridomil) या साफ (Saaf) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "खेत में पानी जमा न होने दें",
+          "फसल चक्र अपनाएं",
+          "मेड़ों को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Rice___Healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Rice",
+        "root_cause": "No disease or pest attack found. The Rice leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Rice ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Rice ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Rice की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Rice की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Wheat___Leaf_Rust": {
+    "scientific_name": "Puccinia triticina",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 70,
+      "temp_c_min": 15,
+      "temp_c_max": 22,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Wheat Leaf Rust",
+        "root_cause": "Airborne fungal spores blowing in the wind that create reddish-orange powder spots on leaf undersides.",
+        "treatment_organic": "1. Spray 5 ml Neem oil mixed in 1 liter water.\n2. Dust organic sulfur powder lightly on leaves during morning.",
+        "treatment_chemical": "Spray Propiconazole 25% EC (Tilt) @ 1 ml per liter of water (15 ml in 15L pump) or Mancozeb @ 2g/L.",
+        "preventive_measures": [
+          "Remove volunteer weed plants around field",
+          "Plant rust-tolerant seed varieties",
+          "Do not over-apply nitrogen urea"
+        ]
+      },
+      "kn": {
+        "disease_name": "Wheat Leaf Rust",
+        "root_cause": "ಗಾಳಿಯ ಮೂಲಕ ಹರಡುವ ರೋಗಾಣುಗಳಿಂದ ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಕೆಂಪು-ಕಿತ್ತಳೆ ಬಣ್ಣದ ತುಕ್ಕು ಪುಡಿಯಂತಹ ಮಚ್ಚೆಗಳು ಮೂಡುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಬೆಳಗಿನ ಜಾವ ಎಲೆಗಳ ಮೇಲೆ ಗಂಧಕದ ಪುಡಿಯನ್ನು (Sulfur) ಲಘುವಾಗಿ ಉದುರಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 1 ಮಿ.ಲೀ ಟಿಲ್ಟ್ (Tilt - Propiconazole) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಬೆನ್ನು ಪಂಪ್‌ಗೆ 15 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ಹೊಲದ ಸುತ್ತಮುತ್ತಲಿನ ಕಳೆಗಿಡಗಳನ್ನು ನಾಶಮಾಡಿ",
+          "ರೋಗ ನಿರೋಧಕ ಬೀಜಗಳನ್ನು ಬಳಸಿ",
+          "ಅತಿಯಾಗಿ ಯೂರಿಯಾ ಗೊಬ್ಬರ ಹಾಕಬೇಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Wheat Leaf Rust",
+        "root_cause": "हवा से फैलने वाले फफूंद से पत्तियों के नीचे लाल-नारंगी रंग का जंग जैसा पाउडर जमा हो जाता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम का तेल मिलाकर छिड़कें।\n2. सुबह के समय पत्तियों पर सल्फर पाउडर का हल्का बुरकाव करें।",
+        "treatment_chemical": "1 लीटर पानी में 1 मिली टिल्ट (Tilt - Propiconazole) मिलाकर छिड़कें (15 लीटर स्प्रे टंकी में 15 मिली)।",
+        "preventive_measures": [
+          "खेत के आसपास के खरपतवार नष्ट करें",
+          "रोगरोधी किस्मों के बीज लगाएं",
+          "यूरिया की अधिक मात्रा न डालें"
+        ]
+      }
+    }
+  },
+  "Wheat___Healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Wheat",
+        "root_cause": "No disease or pest attack found. The Wheat leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Wheat ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Wheat ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Wheat की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Wheat की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Tomato_Bacterial_spot": {
+    "scientific_name": "Xanthomonas perforans",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 24,
+      "temp_c_max": 30,
+      "rain_sensitive": true,
+      "wind_sensitive": false
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Bacterial spot Unknown",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato Bacterial spot Unknown",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato Bacterial spot Unknown",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Tomato_Leaf_Mold": {
+    "scientific_name": "Passalora fulva",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 85,
+      "temp_c_min": 20,
+      "temp_c_max": 26,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Leaf Mold Unknown",
+        "root_cause": "Fungus caused by warm, muggy air and damp soil, causing black rotting spots on leaves and stems.",
+        "treatment_organic": "1. Spray Trichoderma viride @ 5 grams per liter of water.\n2. Mix 50 ml sour buttermilk in 1 liter water and spray.",
+        "treatment_chemical": "Spray Copper Oxychloride (Blitox 50) @ 2.5 grams per liter of water (35g per 15L pump) on both sides of leaves.",
+        "preventive_measures": [
+          "Improve soil drainage",
+          "Do not plant too densely",
+          "Dip roots in bio-fungicide before transplanting"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato Leaf Mold Unknown",
+        "root_cause": "ಸೆಕೆ ಮತ್ತು ತೇವಾಂಶದ ಹವೆಯಲ್ಲಿ ಎಲೆ ಮತ್ತು ಕಾಂಡದ ಮೇಲೆ ಕಪ್ಪು ಕೊಳೆತ ಉಂಟಾಗುತ್ತದೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಗ್ರಾಂ ಟ್ರೈಕೋಡರ್ಮಾ (Trichoderma) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2.5 ಗ್ರಾಂ ಬ್ಲೈಟಾಕ್ಸ್ (Blitox - Copper Oxychloride) ಬೆರೆಸಿ ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 35 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಮಣ್ಣಿನಲ್ಲಿ ನೀರು ಬಸಿದು ಹೋಗಲು ವ್ಯವಸ್ಥೆ ಮಾಡಿ",
+          "ಗಿಡಗಳನ್ನು ಅತಿಯಾಗಿ ಒತ್ತೊತ್ತಾಗಿ ನೆಡಬೇಡಿ",
+          "ನಾಟಿ ಮಾಡುವ ಮುನ್ನ ಬೇರುಗಳಿಗೆ ಜೈವಿಕ ಶಿಲೀಂಧ್ರನಾಶಕ ಉಪಚರಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato Leaf Mold Unknown",
+        "root_cause": "उमस और गीली मिट्टी के कारण पत्तियों व तनों पर काला सड़न रोग फैलता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 ग्राम ट्राइकोडर्मा (Trichoderma) मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ को 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2.5 ग्राम ब्लाइटॉक्स (Blitox - Copper Oxychloride) मिलाकर छिड़कें (15 लीटर टंकी में 35 ग्राम)।",
+        "preventive_measures": [
+          "खेत में जल निकासी सुधारें",
+          "पौधों को बहुत घना न लगाएं",
+          "रोपाई से पहले जड़ों का उपचार करें"
+        ]
+      }
+    }
+  },
+  "Tomato_Septoria_leaf_spot": {
+    "scientific_name": "Septoria lycopersici",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 20,
+      "temp_c_max": 28,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Septoria leaf spot Unknown",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato Septoria leaf spot Unknown",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato Septoria leaf spot Unknown",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Tomato_Spider_mites_Two_spotted_spider_mite": {
+    "scientific_name": "Tetranychus urticae",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 30,
+      "temp_c_min": 25,
+      "temp_c_max": 38,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Spider mites Two spotted spider mite Unknown",
+        "root_cause": "Microscopic spider mites suck sap from the underside of leaves during hot, dry, dusty weather.",
+        "treatment_organic": "1. Spray strong water jet to wash mites off leaves.\n2. Spray 5 ml Neem oil + 2 ml liquid soap in 1 liter water.",
+        "treatment_chemical": "Spray Oberon (Spiromesifen 22.9% SC) @ 1 ml per liter of water (15 ml in 15L pump) or Wettable Sulfur @ 3g/L.",
+        "preventive_measures": [
+          "Keep farm lanes damp to reduce dust",
+          "Do not let soil become completely bone dry",
+          "Inspect leaf undersides with lens"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato Spider mites Two spotted spider mite Unknown",
+        "root_cause": "ಬಿಸಿಲು ಮತ್ತು ಒಣ ಹವೆಯಲ್ಲಿ ಸೂಕ್ಷ್ಮ ಕೆಂಪು ನುಸಿ ಕೀಟಗಳು ಎಲೆಯ ಅಡಿಭಾಗದಿಂದ ರಸ ಹೀರಿ ಎಲೆಗಳನ್ನು ಹಳದಿ ಮಾಡುತ್ತವೆ.",
+        "treatment_organic": "1. ಎಲೆಗಳ ಕೆಳಭಾಗಕ್ಕೆ ನೀರಿನ ರಭಸದ ಸಿಂಪರಣೆ ಮಾಡಿ ನುಸಿ ಕೀಟಗಳನ್ನು ತೊಳೆಯಿರಿ.\n2. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 1 ಮಿ.ಲೀ ಒಬೆರಾನ್ (Oberon - Spiromesifen) ಅಥವಾ ಗಂಧಕದ ಪುಡಿ 3 ಗ್ರಾಂ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 15 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ಧೂಳು ಏಳದಂತೆ ತೇವ ಕಾಪಾಡಿ",
+          "ಮಣ್ಣು ಅತಿಯಾಗಿ ಒಣಗದಂತೆ ನೀರು ಕೊಡಿ",
+          "ಎಲೆಯ ಹಿಂಭಾಗವನ್ನು ಪರೀಕ್ಷಿಸುತ್ತಿರಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato Spider mites Two spotted spider mite Unknown",
+        "root_cause": "तेज धूप और सूखे मौसम में बारीक लाल मकड़ी (माइट) पत्तियों के नीचे से रस चूसती है।",
+        "treatment_organic": "1. तेज पानी की धार से पत्तियों के नीचे छिड़काव कर मकड़ी को धोएं।\n2. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 1 मिली ओबेरॉन (Oberon - Spiromesifen) या 3 ग्राम सल्फर मिलाकर छिड़कें (15 लीटर टंकी में 15 मिली)।",
+        "preventive_measures": [
+          "खेत में धूल कम रखने के लिए नमी रखें",
+          "खेत को ज्यादा सूखने न दें",
+          "पत्तियों के निचले हिस्से की जांच करते रहें"
+        ]
+      }
+    }
+  },
+  "Tomato__Target_Spot": {
+    "scientific_name": "Corynespora cassiicola",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 22,
+      "temp_c_max": 32,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Target Spot Unknown",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato  Target Spot Unknown",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato  Target Spot Unknown",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Tomato__Tomato_mosaic_virus": {
+    "scientific_name": "Tomato Mosaic Tobamovirus (ToMV)",
+    "severity": "Critical",
+    "environmental_thresholds": {},
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Tomato mosaic virus Unknown",
+        "root_cause": "Tiny sucking insects like Whiteflies or Aphids suck sap and spread this virus, causing leaves to curl and turn yellow.",
+        "treatment_organic": "1. Spray 5 ml Neem Oil in 1 liter water to repel sucking insects.\n2. Install 5 yellow sticky cards per acre to trap whiteflies.",
+        "treatment_chemical": "Spray Confidor (Imidacloprid 17.8% SL) @ 0.5 ml per liter of water (7.5 ml in 15L pump) or Acetamiprid @ 0.5g/L to control insects.",
+        "preventive_measures": [
+          "Uproot and burn severely stunted plants",
+          "Keep border crops like maize or sorghum as wind barriers",
+          "Use insect-proof nursery nets"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato  Tomato mosaic virus Unknown",
+        "root_cause": "ಬಿಳಿ ನೊಣಗಳು ಮತ್ತು ಗಿಡಹೇನುಗಳು ರಸ ಹೀರುವಾಗ ಈ ವೈರಸ್ ಹರಡುತ್ತವೆ. ಇದರಿಂದ ಎಲೆಗಳು ಮುದುಡಿಕೊಂಡು ಹಳದಿಯಾಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಕೀಟಗಳನ್ನು ಓಡಿಸಲು 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಎಕರೆಗೆ 5 ಹಳದಿ ಜಿಗುಟು ಬಲೆಗಳನ್ನು (Yellow Sticky Traps) ಕಟ್ಟಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 0.5 ಮಿ.ಲೀ ಕಾನ್ಫಿಡಾರ್ (Confidor - Imidacloprid) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 7.5 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ತೀವ್ರವಾಗಿ ಮುದುಡಿದ ಗಿಡಗಳನ್ನು ಕಿತ್ತು ನಾಶಮಾಡಿ",
+          "ಹೊಲದ ಬದಿಯಲ್ಲಿ ಜೋಳದಂತಹ ತಡೆ ಬೆಳೆ ಬೆಳೆಯಿರಿ",
+          "ನರ್ಸರಿಯಲ್ಲಿ ಕೀಟ ತಡೆ ಪರದೆ ಬಳಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato  Tomato mosaic virus Unknown",
+        "root_cause": "सफेद मक्खी या चेपा पत्तियों का रस चूसकर यह वायरस फैलाते हैं, जिससे पत्तियां मुड़कर पीली पड़ जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें ताकि रस चूसक कीट भाग जाएं।\n2. खेत में पीले चिपचिपे ट्रैप (Yellow Traps) लगाएं।",
+        "treatment_chemical": "1 लीटर पानी में 0.5 मिली कॉन्फिडोर (Confidor - Imidacloprid) मिलाकर छिड़कें (15 लीटर टंकी में 7.5 मिली)।",
+        "preventive_measures": [
+          "ज्यादा मुड़े हुए पौधों को उखाड़कर नष्ट करें",
+          "खेत की मेड़ों पर मक्का या ज्वार की पट्टी लगाएं",
+          "नर्सरी में कीट सुरक्षा जाली लगाएं"
+        ]
+      }
+    }
+  },
+  "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+    "scientific_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 40,
+      "temp_c_min": 25,
+      "temp_c_max": 38,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Tomato Tomato YellowLeaf Curl Virus Unknown",
+        "root_cause": "Tiny sucking insects like Whiteflies or Aphids suck sap and spread this virus, causing leaves to curl and turn yellow.",
+        "treatment_organic": "1. Spray 5 ml Neem Oil in 1 liter water to repel sucking insects.\n2. Install 5 yellow sticky cards per acre to trap whiteflies.",
+        "treatment_chemical": "Spray Confidor (Imidacloprid 17.8% SL) @ 0.5 ml per liter of water (7.5 ml in 15L pump) or Acetamiprid @ 0.5g/L to control insects.",
+        "preventive_measures": [
+          "Uproot and burn severely stunted plants",
+          "Keep border crops like maize or sorghum as wind barriers",
+          "Use insect-proof nursery nets"
+        ]
+      },
+      "kn": {
+        "disease_name": "Tomato  Tomato YellowLeaf  Curl Virus Unknown",
+        "root_cause": "ಬಿಳಿ ನೊಣಗಳು ಮತ್ತು ಗಿಡಹೇನುಗಳು ರಸ ಹೀರುವಾಗ ಈ ವೈರಸ್ ಹರಡುತ್ತವೆ. ಇದರಿಂದ ಎಲೆಗಳು ಮುದುಡಿಕೊಂಡು ಹಳದಿಯಾಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಕೀಟಗಳನ್ನು ಓಡಿಸಲು 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಎಕರೆಗೆ 5 ಹಳದಿ ಜಿಗುಟು ಬಲೆಗಳನ್ನು (Yellow Sticky Traps) ಕಟ್ಟಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 0.5 ಮಿ.ಲೀ ಕಾನ್ಫಿಡಾರ್ (Confidor - Imidacloprid) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 7.5 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ತೀವ್ರವಾಗಿ ಮುದುಡಿದ ಗಿಡಗಳನ್ನು ಕಿತ್ತು ನಾಶಮಾಡಿ",
+          "ಹೊಲದ ಬದಿಯಲ್ಲಿ ಜೋಳದಂತಹ ತಡೆ ಬೆಳೆ ಬೆಳೆಯಿರಿ",
+          "ನರ್ಸರಿಯಲ್ಲಿ ಕೀಟ ತಡೆ ಪರದೆ ಬಳಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Tomato  Tomato YellowLeaf  Curl Virus Unknown",
+        "root_cause": "सफेद मक्खी या चेपा पत्तियों का रस चूसकर यह वायरस फैलाते हैं, जिससे पत्तियां मुड़कर पीली पड़ जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें ताकि रस चूसक कीट भाग जाएं।\n2. खेत में पीले चिपचिपे ट्रैप (Yellow Traps) लगाएं।",
+        "treatment_chemical": "1 लीटर पानी में 0.5 मिली कॉन्फिडोर (Confidor - Imidacloprid) मिलाकर छिड़कें (15 लीटर टंकी में 7.5 मिली)।",
+        "preventive_measures": [
+          "ज्यादा मुड़े हुए पौधों को उखाड़कर नष्ट करें",
+          "खेत की मेड़ों पर मक्का या ज्वार की पट्टी लगाएं",
+          "नर्सरी में कीट सुरक्षा जाली लगाएं"
+        ]
+      }
+    }
+  },
+  "Apple___Apple_scab": {
+    "scientific_name": "Venturia inaequalis",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 15,
+      "temp_c_max": 24,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Apple Apple scab",
+        "root_cause": "Fungus caused by cool, damp weather and moisture sitting on leaves, producing dark brown rough spots.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Prune lower branches to let sunlight reach the whole plant.",
+        "treatment_chemical": "Spray Mancozeb (M-45) @ 2 grams per liter of water (30g per 15L pump), or Difenoconazole @ 0.5 ml per liter.",
+        "preventive_measures": [
+          "Clear fallen leaves from field",
+          "Avoid spraying water directly on leaves in evening",
+          "Keep proper space between trees"
+        ]
+      },
+      "kn": {
+        "disease_name": "Apple Apple scab",
+        "root_cause": "ತಂಪಾದ ಮತ್ತು ತೇವಾಂಶದ ಹವೆಯಲ್ಲಿ ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಕಪ್ಪು-ಕಂದು ಬಣ್ಣದ ಗಜ್ಜು ಮಚ್ಚೆಗಳು ಬರುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ (Neem Oil) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಗಿಡದ ಒಳಗಡೆ ಬಿಸಿಲು ಮತ್ತು ಗಾಳಿ ಆಡಲು ಕೆಳಗಿನ ಒಣಗಿದ ಕೊಂಬೆಗಳನ್ನು ಕತ್ತರಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಮ್ಯಾಂಕೋಜೆಬ್ (Mancozeb / M-45) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಬೆನ್ನು ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಉದುರಿದ ಎಲೆಗಳನ್ನು ಹೊಲದಿಂದ ತೆಗೆದು ನಾಶಮಾಡಿ",
+          "ಸಂಜೆ ಹೊತ್ತು ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಗಿಡಗಳ ನಡುವೆ ಸರಿಯಾದ ಅಂತರವಿರಲಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Apple Apple scab",
+        "root_cause": "ठंडे और नमी वाले मौसम में पत्तियों पर पानी रुकने से यह फफूंद लगती है, जिससे काले-भूरे धब्बे बनते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम का तेल मिलाकर पत्तियों पर छिड़कें।\n2. सूखी और घनी टहनियों को काटकर धूप आने दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम मैंकोजेब (Mancozeb M-45) मिलाकर छिड़कें (15 लीटर वाली स्प्रे टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "गिरे हुए पत्तों को खेत से हटाकर नष्ट करें",
+          "शाम के समय पत्तियों पर पानी न डालें",
+          "पौधों के बीच उचित दूरी रखें"
+        ]
+      }
+    }
+  },
+  "Apple___Black_rot": {
+    "scientific_name": "Botryosphaeria obtusa",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 70,
+      "temp_c_min": 20,
+      "temp_c_max": 28,
+      "rain_sensitive": true,
+      "wind_sensitive": false
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Apple Black rot",
+        "root_cause": "Fungus caused by warm, muggy air and damp soil, causing black rotting spots on leaves and stems.",
+        "treatment_organic": "1. Spray Trichoderma viride @ 5 grams per liter of water.\n2. Mix 50 ml sour buttermilk in 1 liter water and spray.",
+        "treatment_chemical": "Spray Copper Oxychloride (Blitox 50) @ 2.5 grams per liter of water (35g per 15L pump) on both sides of leaves.",
+        "preventive_measures": [
+          "Improve soil drainage",
+          "Do not plant too densely",
+          "Dip roots in bio-fungicide before transplanting"
+        ]
+      },
+      "kn": {
+        "disease_name": "Apple Black rot",
+        "root_cause": "ಸೆಕೆ ಮತ್ತು ತೇವಾಂಶದ ಹವೆಯಲ್ಲಿ ಎಲೆ ಮತ್ತು ಕಾಂಡದ ಮೇಲೆ ಕಪ್ಪು ಕೊಳೆತ ಉಂಟಾಗುತ್ತದೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಗ್ರಾಂ ಟ್ರೈಕೋಡರ್ಮಾ (Trichoderma) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2.5 ಗ್ರಾಂ ಬ್ಲೈಟಾಕ್ಸ್ (Blitox - Copper Oxychloride) ಬೆರೆಸಿ ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 35 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಮಣ್ಣಿನಲ್ಲಿ ನೀರು ಬಸಿದು ಹೋಗಲು ವ್ಯವಸ್ಥೆ ಮಾಡಿ",
+          "ಗಿಡಗಳನ್ನು ಅತಿಯಾಗಿ ಒತ್ತೊತ್ತಾಗಿ ನೆಡಬೇಡಿ",
+          "ನಾಟಿ ಮಾಡುವ ಮುನ್ನ ಬೇರುಗಳಿಗೆ ಜೈವಿಕ ಶಿಲೀಂಧ್ರನಾಶಕ ಉಪಚರಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Apple Black rot",
+        "root_cause": "उमस और गीली मिट्टी के कारण पत्तियों व तनों पर काला सड़न रोग फैलता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 ग्राम ट्राइकोडर्मा (Trichoderma) मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ को 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2.5 ग्राम ब्लाइटॉक्स (Blitox - Copper Oxychloride) मिलाकर छिड़कें (15 लीटर टंकी में 35 ग्राम)।",
+        "preventive_measures": [
+          "खेत में जल निकासी सुधारें",
+          "पौधों को बहुत घना न लगाएं",
+          "रोपाई से पहले जड़ों का उपचार करें"
+        ]
+      }
+    }
+  },
+  "Apple___Cedar_apple_rust": {
+    "scientific_name": "Gymnosporangium juniperi-virginianae",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 12,
+      "temp_c_max": 24,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Apple Cedar apple rust",
+        "root_cause": "Airborne fungal spores blowing in the wind that create reddish-orange powder spots on leaf undersides.",
+        "treatment_organic": "1. Spray 5 ml Neem oil mixed in 1 liter water.\n2. Dust organic sulfur powder lightly on leaves during morning.",
+        "treatment_chemical": "Spray Propiconazole 25% EC (Tilt) @ 1 ml per liter of water (15 ml in 15L pump) or Mancozeb @ 2g/L.",
+        "preventive_measures": [
+          "Remove volunteer weed plants around field",
+          "Plant rust-tolerant seed varieties",
+          "Do not over-apply nitrogen urea"
+        ]
+      },
+      "kn": {
+        "disease_name": "Apple Cedar apple rust",
+        "root_cause": "ಗಾಳಿಯ ಮೂಲಕ ಹರಡುವ ರೋಗಾಣುಗಳಿಂದ ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಕೆಂಪು-ಕಿತ್ತಳೆ ಬಣ್ಣದ ತುಕ್ಕು ಪುಡಿಯಂತಹ ಮಚ್ಚೆಗಳು ಮೂಡುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಬೆಳಗಿನ ಜಾವ ಎಲೆಗಳ ಮೇಲೆ ಗಂಧಕದ ಪುಡಿಯನ್ನು (Sulfur) ಲಘುವಾಗಿ ಉದುರಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 1 ಮಿ.ಲೀ ಟಿಲ್ಟ್ (Tilt - Propiconazole) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಬೆನ್ನು ಪಂಪ್‌ಗೆ 15 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ಹೊಲದ ಸುತ್ತಮುತ್ತಲಿನ ಕಳೆಗಿಡಗಳನ್ನು ನಾಶಮಾಡಿ",
+          "ರೋಗ ನಿರೋಧಕ ಬೀಜಗಳನ್ನು ಬಳಸಿ",
+          "ಅತಿಯಾಗಿ ಯೂರಿಯಾ ಗೊಬ್ಬರ ಹಾಕಬೇಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Apple Cedar apple rust",
+        "root_cause": "हवा से फैलने वाले फफूंद से पत्तियों के नीचे लाल-नारंगी रंग का जंग जैसा पाउडर जमा हो जाता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम का तेल मिलाकर छिड़कें।\n2. सुबह के समय पत्तियों पर सल्फर पाउडर का हल्का बुरकाव करें।",
+        "treatment_chemical": "1 लीटर पानी में 1 मिली टिल्ट (Tilt - Propiconazole) मिलाकर छिड़कें (15 लीटर स्प्रे टंकी में 15 मिली)।",
+        "preventive_measures": [
+          "खेत के आसपास के खरपतवार नष्ट करें",
+          "रोगरोधी किस्मों के बीज लगाएं",
+          "यूरिया की अधिक मात्रा न डालें"
+        ]
+      }
+    }
+  },
+  "Apple___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Apple",
+        "root_cause": "No disease or pest attack found. The Apple leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Apple ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Apple ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Apple की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Apple की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Blueberry___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Blueberry",
+        "root_cause": "No disease or pest attack found. The Blueberry leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Blueberry ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Blueberry ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Blueberry की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Blueberry की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Cherry___Powdery_mildew": {
+    "scientific_name": "Podosphaera clandestina",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 60,
+      "temp_c_min": 18,
+      "temp_c_max": 28,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Cherry Powdery mildew",
+        "root_cause": "Fungus that creates a white powdery coating on leaves during dry days with cool, humid nights.",
+        "treatment_organic": "1. Mix 5 grams Baking Soda + 5 ml Neem oil in 1 liter water and spray.\n2. Spray diluted sour milk/buttermilk (100 ml per liter water).",
+        "treatment_chemical": "Spray Karathane (Dinocap) @ 1 ml/L or Hexaconazole 5% EC (Contaf) @ 2 ml per liter of water (30 ml in 15L pump).",
+        "preventive_measures": [
+          "Ensure good sunlight reaches the foliage",
+          "Prune overcrowded shoots",
+          "Water plants in the morning only"
+        ]
+      },
+      "kn": {
+        "disease_name": "Cherry Powdery mildew",
+        "root_cause": "ಹಗಲಿನಲ್ಲಿ ಬಿಸಿಲು ಮತ್ತು ರಾತ್ರಿಯಲ್ಲಿ ತಂಪು ಇದ್ದಾಗ ಎಲೆಗಳ ಮೇಲೆ ಬಿಳಿ ಪುಡಿಯಂತಹ ಬೂದಿ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಗ್ರಾಂ ಅಡುಗೆ ಸೋಡಾ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 100 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಮಿ.ಲೀ ಕಾಂಟಾಫ್ (Contaf - Hexaconazole) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಬೆನ್ನು ಪಂಪ್‌ಗೆ 30 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ಗಿಡಗಳಿಗೆ ಚೆನ್ನಾಗಿ ಬಿಸಿಲು ಬೀಳುವಂತೆ ಮಾಡಿ",
+          "ಹೆಚ್ಚಿನ ರೆಂಬೆಗಳನ್ನು ಕತ್ತರಿಸಿ",
+          "ಬೆಳಗಿನ ಸಮಯದಲ್ಲಿ ಮಾತ್ರ ನೀರು ಕೊಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Cherry Powdery mildew",
+        "root_cause": "दिन में गर्मी और रात में ठंडक होने पर पत्तियों पर सफेद पाउडर जैसा चूर्ण फफूंद जम जाता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 ग्राम बेकिंग सोडा और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 100 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 मिली कोंटाफ (Contaf - Hexaconazole) मिलाकर छिड़कें (15 लीटर स्प्रे टंकी में 30 मिली)।",
+        "preventive_measures": [
+          "पौधों को अच्छी धूप लगने दें",
+          "घनी टहनियों की छंटाई करें",
+          "सिर्फ सुबह के समय ही पानी दें"
+        ]
+      }
+    }
+  },
+  "Cherry___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Cherry",
+        "root_cause": "No disease or pest attack found. The Cherry leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Cherry ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Cherry ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Cherry की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Cherry की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Corn___Cercospora_leaf_spot Gray_leaf_spot": {
+    "scientific_name": "Cercospora zeae-maydis",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 85,
+      "temp_c_min": 24,
+      "temp_c_max": 32,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Corn Cercospora leaf spot Gray leaf spot",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Corn Cercospora leaf spot Gray leaf spot",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Corn Cercospora leaf spot Gray leaf spot",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Corn___Northern_Leaf_Blight": {
+    "scientific_name": "Exserohilum turcicum",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 18,
+      "temp_c_max": 27,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Corn Northern Leaf Blight",
+        "root_cause": "Fungal infection from continuous rains and humid air, causing leaves to turn brown, dry up, and burn at edges.",
+        "treatment_organic": "1. Spray fresh Cow Urine (Gomutra) 100 ml + 5 ml Neem oil mixed in 1 liter of water.\n2. Remove heavily burnt leaves and bury them.",
+        "treatment_chemical": "Spray Redomil Gold (Metalaxyl + Mancozeb) @ 2 grams per liter of water (30g in 15L pump) or Saaf @ 2g/L.",
+        "preventive_measures": [
+          "Do not let water log in field",
+          "Rotate crop with non-solanaceous crops",
+          "Keep field ridges clean and weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Corn Northern Leaf Blight",
+        "root_cause": "ಮಳೆ ಮತ್ತು ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಾದಾಗ ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 100 ಮಿ.ಲೀ ಗೋಮೂತ್ರ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಹೆಚ್ಚು ಸುಟ್ಟಿರುವ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ರಿಡೋಮಿಲ್ ಗೋಲ್ಡ್ (Ridomil Gold) ಅಥವಾ ಸಾಫ್ (Saaf) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಹೋಗಲು ಕಾಲುವೆ ಮಾಡಿ",
+          "ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ",
+          "ಹೊಲದ ಬದುಗಳಲ್ಲಿ ಕಳೆ ಬೆಳೆಯದಂತೆ ನೋಡಿಕೊಳ್ಳಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Corn Northern Leaf Blight",
+        "root_cause": "बारिश और अधिक नमी के कारण पत्तियां झुलसने लगती हैं और किनारों से सूखकर भूरी हो जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 100 मिली गोमूत्र और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. ज्यादा खराब पत्तियों को तोड़कर जमीन में दबा दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम रिडोमिल गोल्ड (Ridomil) या साफ (Saaf) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "खेत में पानी जमा न होने दें",
+          "फसल चक्र अपनाएं",
+          "मेड़ों को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Grape___Black_rot": {
+    "scientific_name": "Guignardia bidwellii",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 20,
+      "temp_c_max": 30,
+      "rain_sensitive": true,
+      "wind_sensitive": false
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Grape Black rot",
+        "root_cause": "Fungus caused by warm, muggy air and damp soil, causing black rotting spots on leaves and stems.",
+        "treatment_organic": "1. Spray Trichoderma viride @ 5 grams per liter of water.\n2. Mix 50 ml sour buttermilk in 1 liter water and spray.",
+        "treatment_chemical": "Spray Copper Oxychloride (Blitox 50) @ 2.5 grams per liter of water (35g per 15L pump) on both sides of leaves.",
+        "preventive_measures": [
+          "Improve soil drainage",
+          "Do not plant too densely",
+          "Dip roots in bio-fungicide before transplanting"
+        ]
+      },
+      "kn": {
+        "disease_name": "Grape Black rot",
+        "root_cause": "ಸೆಕೆ ಮತ್ತು ತೇವಾಂಶದ ಹವೆಯಲ್ಲಿ ಎಲೆ ಮತ್ತು ಕಾಂಡದ ಮೇಲೆ ಕಪ್ಪು ಕೊಳೆತ ಉಂಟಾಗುತ್ತದೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಗ್ರಾಂ ಟ್ರೈಕೋಡರ್ಮಾ (Trichoderma) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2.5 ಗ್ರಾಂ ಬ್ಲೈಟಾಕ್ಸ್ (Blitox - Copper Oxychloride) ಬೆರೆಸಿ ಎಲೆಗಳ ಮೇಲೆ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 35 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಮಣ್ಣಿನಲ್ಲಿ ನೀರು ಬಸಿದು ಹೋಗಲು ವ್ಯವಸ್ಥೆ ಮಾಡಿ",
+          "ಗಿಡಗಳನ್ನು ಅತಿಯಾಗಿ ಒತ್ತೊತ್ತಾಗಿ ನೆಡಬೇಡಿ",
+          "ನಾಟಿ ಮಾಡುವ ಮುನ್ನ ಬೇರುಗಳಿಗೆ ಜೈವಿಕ ಶಿಲೀಂಧ್ರನಾಶಕ ಉಪಚರಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Grape Black rot",
+        "root_cause": "उमस और गीली मिट्टी के कारण पत्तियों व तनों पर काला सड़न रोग फैलता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 ग्राम ट्राइकोडर्मा (Trichoderma) मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ को 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2.5 ग्राम ब्लाइटॉक्स (Blitox - Copper Oxychloride) मिलाकर छिड़कें (15 लीटर टंकी में 35 ग्राम)।",
+        "preventive_measures": [
+          "खेत में जल निकासी सुधारें",
+          "पौधों को बहुत घना न लगाएं",
+          "रोपाई से पहले जड़ों का उपचार करें"
+        ]
+      }
+    }
+  },
+  "Grape___Esca_(Black_Measles)": {
+    "scientific_name": "Phaeomoniella chlamydospora & Fomitiporia mediterranea",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 60,
+      "temp_c_min": 22,
+      "temp_c_max": 35,
+      "rain_sensitive": false,
+      "wind_sensitive": false
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Grape Esca (Black Measles)",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Grape Esca (Black Measles)",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Grape Esca (Black Measles)",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+    "scientific_name": "Pseudocercospora cladosporioides",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 22,
+      "temp_c_max": 30,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Grape Leaf blight (Isariopsis Leaf Spot)",
+        "root_cause": "Fungal infection from continuous rains and humid air, causing leaves to turn brown, dry up, and burn at edges.",
+        "treatment_organic": "1. Spray fresh Cow Urine (Gomutra) 100 ml + 5 ml Neem oil mixed in 1 liter of water.\n2. Remove heavily burnt leaves and bury them.",
+        "treatment_chemical": "Spray Redomil Gold (Metalaxyl + Mancozeb) @ 2 grams per liter of water (30g in 15L pump) or Saaf @ 2g/L.",
+        "preventive_measures": [
+          "Do not let water log in field",
+          "Rotate crop with non-solanaceous crops",
+          "Keep field ridges clean and weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Grape Leaf blight (Isariopsis Leaf Spot)",
+        "root_cause": "ಮಳೆ ಮತ್ತು ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಾದಾಗ ಎಲೆಗಳು ಸುಟ್ಟಂತೆ ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ ಒಣಗುತ್ತವೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 100 ಮಿ.ಲೀ ಗೋಮೂತ್ರ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. ಹೆಚ್ಚು ಸುಟ್ಟಿರುವ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ರಿಡೋಮಿಲ್ ಗೋಲ್ಡ್ (Ridomil Gold) ಅಥವಾ ಸಾಫ್ (Saaf) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಹೊಲದಲ್ಲಿ ನೀರು ನಿಲ್ಲದಂತೆ ಬಸಿದು ಹೋಗಲು ಕಾಲುವೆ ಮಾಡಿ",
+          "ಬೆಳೆ ಪರಿವರ್ತನೆ ಮಾಡಿ",
+          "ಹೊಲದ ಬದುಗಳಲ್ಲಿ ಕಳೆ ಬೆಳೆಯದಂತೆ ನೋಡಿಕೊಳ್ಳಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Grape Leaf blight (Isariopsis Leaf Spot)",
+        "root_cause": "बारिश और अधिक नमी के कारण पत्तियां झुलसने लगती हैं और किनारों से सूखकर भूरी हो जाती हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 100 मिली गोमूत्र और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. ज्यादा खराब पत्तियों को तोड़कर जमीन में दबा दें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम रिडोमिल गोल्ड (Ridomil) या साफ (Saaf) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "खेत में पानी जमा न होने दें",
+          "फसल चक्र अपनाएं",
+          "मेड़ों को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Grape___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Grape",
+        "root_cause": "No disease or pest attack found. The Grape leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Grape ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Grape ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Grape की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Grape की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+    "scientific_name": "Candidatus Liberibacter asiaticus",
+    "severity": "Critical",
+    "environmental_thresholds": {
+      "humidity_pct_min": 50,
+      "temp_c_min": 20,
+      "temp_c_max": 35,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Orange Haunglongbing (Citrus greening)",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Orange Haunglongbing (Citrus greening)",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Orange Haunglongbing (Citrus greening)",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Peach___Bacterial_spot": {
+    "scientific_name": "Xanthomonas arboricola pv. pruni",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 20,
+      "temp_c_max": 30,
+      "rain_sensitive": true,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Peach Bacterial spot",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Peach Bacterial spot",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Peach Bacterial spot",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Peach___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Peach",
+        "root_cause": "No disease or pest attack found. The Peach leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Peach ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Peach ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Peach की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Peach की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Raspberry___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Raspberry",
+        "root_cause": "No disease or pest attack found. The Raspberry leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Raspberry ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Raspberry ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Raspberry की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Raspberry की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Soybean___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Soybean",
+        "root_cause": "No disease or pest attack found. The Soybean leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Soybean ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Soybean ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Soybean की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Soybean की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Squash___Powdery_mildew": {
+    "scientific_name": "Podosphaera xanthii",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 60,
+      "temp_c_min": 20,
+      "temp_c_max": 32,
+      "rain_sensitive": false,
+      "wind_sensitive": true
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Squash Powdery mildew",
+        "root_cause": "Fungus that creates a white powdery coating on leaves during dry days with cool, humid nights.",
+        "treatment_organic": "1. Mix 5 grams Baking Soda + 5 ml Neem oil in 1 liter water and spray.\n2. Spray diluted sour milk/buttermilk (100 ml per liter water).",
+        "treatment_chemical": "Spray Karathane (Dinocap) @ 1 ml/L or Hexaconazole 5% EC (Contaf) @ 2 ml per liter of water (30 ml in 15L pump).",
+        "preventive_measures": [
+          "Ensure good sunlight reaches the foliage",
+          "Prune overcrowded shoots",
+          "Water plants in the morning only"
+        ]
+      },
+      "kn": {
+        "disease_name": "Squash Powdery mildew",
+        "root_cause": "ಹಗಲಿನಲ್ಲಿ ಬಿಸಿಲು ಮತ್ತು ರಾತ್ರಿಯಲ್ಲಿ ತಂಪು ಇದ್ದಾಗ ಎಲೆಗಳ ಮೇಲೆ ಬಿಳಿ ಪುಡಿಯಂತಹ ಬೂದಿ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. ಒಂದು ಲೀಟರ್ ನೀರಿಗೆ 5 ಗ್ರಾಂ ಅಡುಗೆ ಸೋಡಾ ಮತ್ತು 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 100 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಮಿ.ಲೀ ಕಾಂಟಾಫ್ (Contaf - Hexaconazole) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಬೆನ್ನು ಪಂಪ್‌ಗೆ 30 ಮಿ.ಲೀ).",
+        "preventive_measures": [
+          "ಗಿಡಗಳಿಗೆ ಚೆನ್ನಾಗಿ ಬಿಸಿಲು ಬೀಳುವಂತೆ ಮಾಡಿ",
+          "ಹೆಚ್ಚಿನ ರೆಂಬೆಗಳನ್ನು ಕತ್ತರಿಸಿ",
+          "ಬೆಳಗಿನ ಸಮಯದಲ್ಲಿ ಮಾತ್ರ ನೀರು ಕೊಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Squash Powdery mildew",
+        "root_cause": "दिन में गर्मी और रात में ठंडक होने पर पत्तियों पर सफेद पाउडर जैसा चूर्ण फफूंद जम जाता है।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 ग्राम बेकिंग सोडा और 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 100 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 मिली कोंटाफ (Contaf - Hexaconazole) मिलाकर छिड़कें (15 लीटर स्प्रे टंकी में 30 मिली)।",
+        "preventive_measures": [
+          "पौधों को अच्छी धूप लगने दें",
+          "घनी टहनियों की छंटाई करें",
+          "सिर्फ सुबह के समय ही पानी दें"
+        ]
+      }
+    }
+  },
+  "Strawberry___Leaf_scorch": {
+    "scientific_name": "Diplocarpon earlianum",
+    "severity": "Moderate",
+    "environmental_thresholds": {
+      "humidity_pct_min": 75,
+      "temp_c_min": 18,
+      "temp_c_max": 28,
+      "rain_sensitive": true,
+      "wind_sensitive": false
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Strawberry Leaf scorch",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Strawberry Leaf scorch",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Strawberry Leaf scorch",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  },
+  "Strawberry___healthy": {
+    "scientific_name": "None (Healthy Crop)",
+    "severity": "Healthy",
+    "environmental_thresholds": {
+      "humidity_pct_min": 80,
+      "temp_c_min": 15,
+      "temp_c_max": 35
+    },
+    "translations": {
+      "en": {
+        "disease_name": "Healthy Strawberry",
+        "root_cause": "No disease or pest attack found. The Strawberry leaf has normal green color and healthy veins.",
+        "treatment_organic": "No treatment needed. Keep giving balanced water and organic compost regularly.",
+        "treatment_chemical": "No chemical spray needed.",
+        "preventive_measures": [
+          "Keep regular watering at root level",
+          "Remove any weeds around the crop",
+          "Inspect leaves once a week"
+        ]
+      },
+      "kn": {
+        "disease_name": "ಆರೋಗ್ಯಕರ Strawberry ಬೆಳೆ",
+        "root_cause": "ಯಾವುದೇ ರೋಗ ಅಥವಾ ಕೀಟಬಾಧೆ ಇಲ್ಲ. Strawberry ಎಲೆಯು ಉತ್ತಮ ಹಸಿರು ಬಣ್ಣ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ಹೊಂದಿದೆ.",
+        "treatment_organic": "ಯಾವುದೇ ಔಷಧಿಯ ಅಗತ್ಯವಿಲ್ಲ. ನಿಯಮಿತವಾಗಿ ನೀರು ಮತ್ತು ಕೊಟ್ಟಿಗೆ ಗೊಬ್ಬರ ನೀಡಿ.",
+        "treatment_chemical": "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಸಿಂಪಡಣೆ ಬೇಡ.",
+        "preventive_measures": [
+          "ಗಿಡದ ಬುಡಕ್ಕೆ ನಿಯಮಿತವಾಗಿ ನೀರು ಕೊಡಿ",
+          "ಹೊಲದಲ್ಲಿ ಕಳೆಗಳನ್ನು ತೆಗೆದು ಸ್ವಚ್ಛವಾಗಿಡಿ",
+          "ವಾರಕ್ಕೊಮ್ಮೆ ಎಲೆಗಳನ್ನು ಗಮನಿಸಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "स्वस्थ Strawberry की फसल",
+        "root_cause": "कोई बीमारी या कीट का प्रकोप नहीं है। Strawberry की पत्ती पूरी तरह हरी और स्वस्थ है।",
+        "treatment_organic": "किसी दवा की जरूरत नहीं है। समय पर पानी और गोबर की खाद देते रहें।",
+        "treatment_chemical": "किसी रासायनिक छिड़काव की जरूरत नहीं है।",
+        "preventive_measures": [
+          "पौधों की जड़ों में समय पर पानी दें",
+          "खेत में खरपतवार न पनपने दें",
+          "हफ्ते में एक बार फसल का निरीक्षण करें"
+        ]
+      }
+    }
+  },
+  "Background_without_leaves": {
+    "scientific_name": "Non-foliar object",
+    "severity": "Healthy",
+    "environmental_thresholds": {},
+    "translations": {
+      "en": {
+        "disease_name": "Background without leaves Unknown",
+        "root_cause": "Fungal leaf spot caused by wet leaves and humid weather, making round brown spots on leaves.",
+        "treatment_organic": "1. Mix 5 ml Neem Oil + 2 ml liquid soap in 1 liter of water and spray.\n2. Spray 50 ml sour buttermilk in 1 liter water.",
+        "treatment_chemical": "Spray Saaf (Carbendazim + Mancozeb) @ 2 grams per liter of water (30g per 15L pump) in the morning.",
+        "preventive_measures": [
+          "Pluck and bury infected leaves",
+          "Avoid splashing water over leaves",
+          "Keep fields weed-free"
+        ]
+      },
+      "kn": {
+        "disease_name": "Background without leaves Unknown",
+        "root_cause": "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ನಿಲ್ಲುವುದರಿಂದ ಮತ್ತು ತೇವಾಂಶದಿಂದ ಈ ದುಂಡಗಿನ ಕಂದು ಚುಕ್ಕೆ ರೋಗ ಬರುತ್ತದೆ.",
+        "treatment_organic": "1. 1 ಲೀಟರ್ ನೀರಿಗೆ 5 ಮಿ.ಲೀ ಬೇವಿನ ಎಣ್ಣೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.\n2. 50 ಮಿ.ಲೀ ಹುಳಿ ಮಜ್ಜಿಗೆಯನ್ನು 1 ಲೀಟರ್ ನೀರಿಗೆ ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ.",
+        "treatment_chemical": "1 ಲೀಟರ್ ನೀರಿಗೆ 2 ಗ್ರಾಂ ಸಾಫ್ (Saaf - Carbendazim + Mancozeb) ಬೆರೆಸಿ ಸಿಂಪಡಿಸಿ (15 ಲೀಟರ್ ಪಂಪ್‌ಗೆ 30 ಗ್ರಾಂ).",
+        "preventive_measures": [
+          "ಬಾಧಿತ ಎಲೆಗಳನ್ನು ಕಿತ್ತು ಮಣ್ಣಿನಲ್ಲಿ ಹೂತುಹಾಕಿ",
+          "ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಚೆಲ್ಲಬೇಡಿ",
+          "ಹೊಲವನ್ನು ಕಳೆಮುಕ್ತವಾಗಿಡಿ"
+        ]
+      },
+      "hi": {
+        "disease_name": "Background without leaves Unknown",
+        "root_cause": "पत्तियों पर नमी रुकने और उमस से गोल भूरे रंग के धब्बे बनने लगते हैं।",
+        "treatment_organic": "1. 1 लीटर पानी में 5 मिली नीम तेल मिलाकर छिड़कें।\n2. 50 मिली खट्टी छाछ 1 लीटर पानी में मिलाकर छिड़कें।",
+        "treatment_chemical": "1 लीटर पानी में 2 ग्राम साफ (Saaf - Carbendazim + Mancozeb) मिलाकर छिड़कें (15 लीटर टंकी में 30 ग्राम)।",
+        "preventive_measures": [
+          "संक्रमित पत्तियों को तोड़कर जमीन में दबाएं",
+          "पत्तियों पर पानी का छिड़काव न करें",
+          "खेत को खरपतवार मुक्त रखें"
+        ]
+      }
+    }
+  }
+}

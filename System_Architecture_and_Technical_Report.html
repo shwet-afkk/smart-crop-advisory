@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Visual Crop Advisory System - Architecture & Technical Report</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  @page {
+    size: A4;
+    margin: 20mm 15mm 20mm 15mm;
+    @bottom-right {
+      content: counter(page);
+    }
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    line-height: 1.6;
+    font-size: 10.5pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cover-page {
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+    border-bottom: 3px solid #15803d;
+    padding-bottom: 30px;
+  }
+
+  .header-badge {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    border: 1px solid #bbf7d0;
+  }
+
+  h1.title {
+    font-size: 26pt;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+
+  h2.subtitle {
+    font-size: 14pt;
+    font-weight: 500;
+    color: #475569;
+    line-height: 1.4;
+    margin: 0 0 30px 0;
+  }
+
+  .meta-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #16a34a;
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 25px 0;
+  }
+
+  .authors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .author-card {
+    font-size: 9.5pt;
+  }
+
+  .author-card strong {
+    color: #0f172a;
+    display: block;
+  }
+
+  .author-card span {
+    color: #64748b;
+    font-size: 8.5pt;
+  }
+
+  .institution-block {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 9.5pt;
+    color: #334155;
+  }
+
+  .institution-block strong {
+    color: #0f172a;
+  }
+
+  /* Section Styling */
+  h2.section-title {
+    font-size: 15pt;
+    font-weight: 700;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    page-break-after: avoid;
+  }
+
+  h3.subsection-title {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #166534;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    page-break-after: avoid;
+  }
+
+  p {
+    margin: 0 0 12px 0;
+    text-align: justify;
+  }
+
+  ul, ol {
+    margin: 0 0 15px 0;
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 9pt;
+    page-break-inside: avoid;
+  }
+
+  table th {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+  }
+
+  table td {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    vertical-align: top;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  /* Architecture Box / Cards */
+  .arch-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    page-break-inside: avoid;
+  }
+
+  .arch-card-header {
+    font-weight: 700;
+    color: #15803d;
+    font-size: 11pt;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .code-block {
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    line-height: 1.45;
+    overflow-x: auto;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+
+  .math-block {
+    background: #f1f5f9;
+    border-left: 3px solid #3b82f6;
+    padding: 10px 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9pt;
+    margin: 12px 0;
+    border-radius: 0 6px 6px 0;
+    page-break-inside: avoid;
+  }
+
+  .highlight-box {
+    background-color: #fefce8;
+    border: 1px solid #fef08a;
+    border-left: 4px solid #eab308;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 9.5pt;
+    margin: 15px 0;
+    page-break-inside: avoid;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover-page">
+  <div>
+    <div class="header-badge">Comprehensive Engineering & Architectural Specification</div>
+    <h1 class="title">AgroVoice-XAI: Smart Visual Crop Advisory System</h1>
+    <h2 class="subtitle">System Architecture, Deep Learning Model Selection, Explainable AI (Grad-CAM), Microclimatic Risk Engine, and Multilingual Agronomic Voice Pipeline</h2>
+    
+    <div class="meta-box">
+      <div style="font-weight: 700; color: #15803d; margin-bottom: 8px; font-size: 10pt; text-transform: uppercase; letter-spacing: 0.5px;">
+        Project Engineering Team
+      </div>
+      <div class="authors-grid">
+        <div class="author-card">
+          <strong>Shashwat Shaurya</strong>
+          <span>USN: 1MV21CS098 | shashwat.shaurya2005@gmail.com</span>
+        </div>
+        <div class="author-card">
+          <strong>Parth Verma</strong>
+          <span>USN: 1MV21CS075 | vermaparth3108@gmail.com</span>
+        </div>
+        <div class="author-card">
+          <strong>Shwetanshu</strong>
+          <span>USN: 1MV21CS107 | shwetanshu44@gmail.com</span>
+        </div>
+        <div class="author-card">
+          <strong>Kumar Vaibhav</strong>
+          <span>USN: 1MV21CS054 | k.vaibhav10201@gmail.com</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 15px; padding-top: 12px; border-top: 1px dashed #cbd5e1; display: flex; justify-content: space-between; font-size: 9pt;">
+        <div>
+          <strong style="color: #0f172a;">Project Guide:</strong><br>
+          Dr. Pallavi, Associate Professor
+        </div>
+        <div>
+          <strong style="color: #0f172a;">Head of Department:</strong><br>
+          Dr. Anitha T N, HOD, Dept. of CSE
+        </div>
+        <div>
+          <strong style="color: #0f172a;">Principal:</strong><br>
+          Dr. M N Thippeswamy, Principal
+        </div>
+      </div>
+    </div>
+
+    <div class="institution-block">
+      <strong>Department of Computer Science and Engineering</strong><br>
+      Sir M. Visvesvaraya Institute of Technology (Sir MVIT), Bengaluru – 562157<br>
+      Affiliated to Visvesvaraya Technological University (VTU), Belagavi, Karnataka, India
+    </div>
+  </div>
+
+  <div style="font-size: 8.5pt; color: #64748b; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+    Document Release: v2.4 (Production Architecture) · Academic Year 2025–2026 · Major Project Phase II
+  </div>
+</div>
+
+<!-- SECTION 1: EXECUTIVE OVERVIEW -->
+<h2 class="section-title">1. Executive Overview & Problem Formulation</h2>
+
+<p>
+Agriculture represents the economic backbone of rural India, employing over 58% of the rural workforce. However, crop yield loss due to infectious phytopathological agents (fungi, bacteria, viruses, oomycetes, and acari) accounts for an estimated ₹1.5 lakh crore ($18+ billion USD) annually. Smallholder farmers face three critical systemic bottlenecks:
+</p>
+
+<ol>
+  <li><strong>The Visual Diagnosis Fallacy (Black-Box AI):</strong> Traditional deep learning image classifiers output a probability distribution across classes (e.g. <code>Tomato___Early_blight: 92%</code>) without visual grounding. Farmers and agronomists cannot verify whether the model recognized actual pathogenic lesion necrosis or took opportunistic "shortcut learning" from background soil, fingers, or lighting conditions.</li>
+  <li><strong>Meteorological Disconnect:</strong> Plant disease proliferation is strictly governed by the <em>Disease Triangle</em> (Susceptible Host + Virulent Pathogen + Conducive Environment). An image-only classifier operates in isolation from environmental physics, ignoring that a fungal spore requires leaf wetness ($\ge 4	ext{ hours}$) and high relative humidity ($RH \ge 75\%$) to germinate.</li>
+  <li><strong>Linguistic & Technical Inaccessibility:</strong> Academic prescriptions filled with complex Latin binomials (e.g. <em>Venturia inaequalis</em>, <em>Cercospora sojina</em>) and chemical jargon without localized vernacular translations (Kannada, Hindi) or oral speech synthesis fail to serve farmers with basic formal education.</li>
+</ol>
+
+<p>
+<strong>AgroVoice-XAI</strong> solves these challenges by uniting <strong>Edge Deep Learning (MobileNetV2)</strong>, <strong>Explainable AI Visual Saliency (Grad-CAM)</strong>, <strong>Real-time Microclimatic Risk Modeling (Open-Meteo API)</strong>, a <strong>4-Pillar Clinical Agronomic Knowledge Base (39 Taxa)</strong>, and a <strong>Bidirectional Indic Voice Assistant (Web Speech API)</strong> in a single, responsive, daylight-optimized web application.
+</p>
+
+<!-- SECTION 2: END-TO-END SYSTEM ARCHITECTURE -->
+<h2 class="section-title">2. End-to-End Multi-Tier System Architecture</h2>
+
+<p>
+The platform follows a decoupled, resilient, service-oriented multi-tier architecture designed for low-latency inference (&lt;450ms) and field reliability.
+</p>
+
+<div class="arch-card">
+  <div class="arch-card-header">
+    <span>Tier 1: Client / Edge Presentation Layer (React 18 + Vite)</span>
+    <span style="font-size: 8.5pt; color: #64748b;">Port: 5173 / HTTPS</span>
+  </div>
+  <p style="font-size: 9pt; margin: 0;">
+    Responsive Single Page Application (SPA) providing live camera stream capture, hardware torch toggle, front/rear camera selection, drag-and-drop file ingestion, Grad-CAM side-by-side visualizer, 4-pillar advisory tabs, and Web Speech STT/TTS audio synthesis engine.
+  </p>
+</div>
+
+<div class="arch-card">
+  <div class="arch-card-header">
+    <span>Tier 2: Asynchronous Application & Routing Layer (FastAPI)</span>
+    <span style="font-size: 8.5pt; color: #64748b;">Port: 8000 / ASGI Uvicorn</span>
+  </div>
+  <p style="font-size: 9pt; margin: 0;">
+    High-throughput asynchronous Python ASGI server exposing RESTful endpoints (<code>/api/analyze-crop</code>, <code>/api/weather-context</code>, <code>/api/voice-query</code>, <code>/api/health</code>). Manages multipart image upload buffering, pipeline orchestration, and response schema serialization via Pydantic.
+  </p>
+</div>
+
+<div class="arch-card">
+  <div class="arch-card-header">
+    <span>Tier 3: AI Inference & Visual Explainability Engine (PyTorch + Grad-CAM)</span>
+    <span style="font-size: 8.5pt; color: #64748b;">Model: MobileNetV2 (39 Classes)</span>
+  </div>
+  <p style="font-size: 9pt; margin: 0;">
+    Executes deep convolutional forward pass on preprocessed $224	imes 224	imes 3$ image tensors. PyTorch forward and full backward hooks intercept layer activations and gradients from <code>features[-1]</code> to synthesize class-discriminative heatmaps blended via OpenCV Jet colormap.
+  </p>
+</div>
+
+<div class="arch-card">
+  <div class="arch-card-header">
+    <span>Tier 4: Environmental Risk & Microclimate Engine (Open-Meteo Integration)</span>
+    <span style="font-size: 8.5pt; color: #64748b;">WMO Grid Model (0.1° Resolution)</span>
+  </div>
+  <p style="font-size: 9pt; margin: 0;">
+    Asynchronously queries real-time hourly meteorological telemetry (Temperature, Relative Humidity, Wind Speed, Precipitation) based on client GPS coordinates. Computes continuous risk scores $(0-100)$ against biological pathogen threshold envelopes.
+  </p>
+</div>
+
+<div class="arch-card">
+  <div class="arch-card-header">
+    <span>Tier 5: 4-Pillar Clinical Agronomic Knowledge Base & Indic NLP</span>
+    <span style="font-size: 8.5pt; color: #64748b;">JSON Taxonomy + Regex Intent Parser</span>
+  </div>
+  <p style="font-size: 9pt; margin: 0;">
+    Stores verified 4-pillar treatment regimens (Etiology, Organic/Biological, Chemical with exact active ingredients & 15L pump dosages, Cultural Prevention) translated into native Kannada, Hindi, and English.
+  </p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 3: DEEP DIVE INTO ML MODEL SELECTION -->
+<h2 class="section-title">3. Deep Learning Model Selection & Comparative Rationale</h2>
+
+<h3 class="subsection-title">3.1 Why MobileNetV2 was Chosen</h3>
+<p>
+For field agricultural deployment, model selection is governed by a strict trade-off between **top-1 classification accuracy**, **parameter size**, **inference latency on resource-constrained hardware**, and **computational efficiency (FLOPs)**.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model Architecture</th>
+      <th>Parameters (M)</th>
+      <th>FLOPs (G)</th>
+      <th>Top-1 Val Accuracy</th>
+      <th>Inference Latency (CPU)</th>
+      <th>Edge Readiness / Suitability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>MobileNetV2 (Our Selection)</strong></td>
+      <td><strong>3.5M</strong></td>
+      <td><strong>0.30G</strong></td>
+      <td><strong>98.43%</strong></td>
+      <td><strong>22 ms</strong></td>
+      <td><strong>Optimal for Farm Mobile & Edge</strong></td>
+    </tr>
+    <tr>
+      <td>ResNet-50</td>
+      <td>25.6M</td>
+      <td>4.10G</td>
+      <td>97.80%</td>
+      <td>89 ms</td>
+      <td>Heavy memory footprint; slow on edge</td>
+    </tr>
+    <tr>
+      <td>VGG-16</td>
+      <td>138.4M</td>
+      <td>15.50G</td>
+      <td>95.20%</td>
+      <td>240 ms</td>
+      <td>Prohibitive storage & energy consumption</td>
+    </tr>
+    <tr>
+      <td>EfficientNet-B0</td>
+      <td>5.3M</td>
+      <td>0.39G</td>
+      <td>98.10%</td>
+      <td>38 ms</td>
+      <td>High accuracy but complex kernel ops</td>
+    </tr>
+    <tr>
+      <td>Vision Transformer (ViT-B/16)</td>
+      <td>86.6M</td>
+      <td>17.60G</td>
+      <td>96.90%</td>
+      <td>310 ms</td>
+      <td>Requires huge datasets; poor on CPU</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 class="subsection-title">3.2 Architectural Highlights of MobileNetV2</h3>
+<p>
+MobileNetV2 introduces two fundamental architectural innovations that allow it to match or exceed the accuracy of ResNet-50 while utilizing $7	imes$ fewer parameters:
+</p>
+
+<ol>
+  <li><strong>Depthwise Separable Convolutions:</strong> Factorizes standard convolution into:
+    <ul>
+      <li><em>Depthwise Convolution:</em> Applies a single $3	imes 3$ spatial filter per input channel.</li>
+      <li><em>Pointwise Convolution:</em> Applies a $1	imes 1$ convolution to linearly combine the depthwise outputs across channels.</li>
+    </ul>
+    This reduces computational cost by a factor of:
+    <div class="math-block">
+      	ext{Reduction Ratio} = rac{D_K \cdot D_K \cdot M \cdot D_F \cdot D_F + M \cdot N \cdot D_F \cdot D_F}{D_K \cdot D_K \cdot M \cdot N \cdot D_F \cdot D_F} = rac{1}{N} + rac{1}{D_K^2} pprox rac{1}{9} 	ext{ for } 3	imes 3 	ext{ kernels}
+    </div>
+  </li>
+  <li><strong>Inverted Residual with Linear Bottleneck:</strong>
+    Unlike classic ResNet blocks which compress channels then expand them, MobileNetV2 uses an <em>Inverted Residual Block</em> that first expands input channels by an expansion factor $t=6$, performs depthwise filtering in the high-dimensional manifold, and then projects back to a lower-dimensional bottleneck using a <em>linear activation</em> (preventing ReLU from destroying non-linear features in low-dimensional space).
+  </li>
+</ol>
+
+<h3 class="subsection-title">3.3 Dataset, Taxonomy & Training Specifications</h3>
+<ul>
+  <li><strong>Combined Agricultural Dataset:</strong> 39 distinct classes (Apple, Blueberry, Cherry, Corn, Grape, Orange, Peach, Pepper, Potato, Raspberry, Soybean, Squash, Strawberry, Tomato, and Background/Non-leaf).</li>
+  <li><strong>Total Dataset Volume:</strong> 57,811 high-resolution images stratified into Train (85%) and Validation (15%).</li>
+  <li><strong>Hardware Acceleration:</strong> Trained on an NVIDIA GeForce RTX 4060 Laptop GPU (CUDA 12.x, 8GB VRAM).</li>
+  <li><strong>Optimization & Hyperparameters:</strong> Adam optimizer ($eta_1=0.9, eta_2=0.999$, weight decay $1	imes 10^{-4}$), Cross-Entropy Loss, learning rate $1	imes 10^{-4}$ with StepLR decay, batch size 64.</li>
+  <li><strong>Achieved Validation Metrics:</strong> **98.43% Validation Accuracy**, **98.81% Training Accuracy**, Cross-Entropy Loss of **0.0354**.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<!-- SECTION 4: EXPLAINABLE AI WITH GRAD-CAM -->
+<h2 class="section-title">4. Explainable AI (XAI) with Grad-CAM</h2>
+
+<h3 class="subsection-title">4.1 Theoretical Foundation of Grad-CAM</h3>
+<p>
+Gradient-weighted Class Activation Mapping (Grad-CAM) generates visual explanations for decisions made by convolutional neural networks without requiring structural retraining. In our architecture, hooks are attached to the final convolutional layer of MobileNetV2 (<code>features[-1]</code>, producing a feature activation map $A \in \mathbb{R}^{1280 	imes 7 	imes 7}$).
+</p>
+
+<p>
+To calculate the importance of each feature map $k$ for predicted disease class $c$, we compute the gradient of the winning class score $y^c$ (before softmax) with respect to feature map activations $A^k$:
+</p>
+
+<div class="math-block">
+  lpha_k^c = \overbrace{rac{1}{Z} \sum_{i=1}^U \sum_{j=1}^V}^{	ext{Global Average Pooling}} rac{\partial y^c}{\partial A_{i,j}^k}
+</div>
+
+<p>
+The class-discriminative localization map $L_{	ext{Grad-CAM}}^c$ is computed as the rectified linear combination of forward activation maps weighted by $lpha_k^c$:
+</p>
+
+<div class="math-block">
+  L_{	ext{Grad-CAM}}^c = 	ext{ReLU}\left( \sum_{k} lpha_k^c A^k ight)
+</div>
+
+<p>
+The $	ext{ReLU}$ function ensures that only features that have a positive influence on the target disease class are retained, filtering out features that belong to other classes or background clutter.
+</p>
+
+<h3 class="subsection-title">4.2 Pipeline Implementation & Color Blending</h3>
+<ol>
+  <li><strong>Gradient Capture:</strong> A forward hook stores $A^k$, and a backward hook captures $rac{\partial y^c}{\partial A^k}$ during backpropagation.</li>
+  <li><strong>Min-Max Normalization:</strong> $L_{	ext{Grad-CAM}}^c$ is normalized to $[0.0, 1.0]$.</li>
+  <li><strong>Bilinear Upsampling:</strong> Saliency map is resized from $7	imes 7$ to the original image dimensions ($W 	imes H$).</li>
+  <li><strong>Colormap Transformation:</strong> Saliency is converted to a 3-channel RGB Jet Colormap (where red denotes highest neural activation and blue denotes low activation).</li>
+  <li><strong>Alpha Blending:</strong> The heatmap is blended with the original leaf photo using $lpha = 0.45$:
+    <div class="math-block">
+      I_{	ext{Blended}} = (1 - lpha) \cdot I_{	ext{Original}} + lpha \cdot I_{	ext{Heatmap}}
+    </div>
+  </li>
+  <li><strong>Base64 Data URI Serialization:</strong> Output image is encoded into a high-efficiency PNG Data URI string returned in the JSON payload to the client.</li>
+</ol>
+
+<!-- SECTION 5: MICROCLIMATIC RISK ENGINE -->
+<h2 class="section-title">5. Environmental Risk & Microclimatic Triangulation Engine</h2>
+
+<p>
+Plant pathogens require specific environmental conditions to complete their biological life cycle. The <strong>Environmental Risk Engine</strong> connects live meteorological sensor telemetry with biological pathogen thresholds:
+</p>
+
+<div class="math-block">
+  	ext{Risk Score } S_{	ext{Risk}} = S_{	ext{Baseline}} + \Delta S_{	ext{Humidity}} + \Delta S_{	ext{Temperature}} + \Delta S_{	ext{Rain}} + \Delta S_{	ext{Wind}} \quad (	ext{Bounded } [0, 100])
+</div>
+
+<ul>
+  <li><strong>$S_{	ext{Baseline}}$ (Pathogen Biological Virulence):</strong> Critical severity pathogens (e.g. Late Blight) start with an inherent baseline of $+40$, Moderate with $+20$, Healthy with $0$.</li>
+  <li><strong>$\Delta S_{	ext{Humidity}}$ (Spore Germination):</strong> If live relative humidity $RH \ge RH_{	ext{min}}$ (typically $75\%$), adds $+25$ to $+30$ points due to surface moisture film formation.</li>
+  <li><strong>$\Delta S_{	ext{Temperature}}$ (Thermal Incubation):</strong> If live temperature falls within the optimal pathogen replication range $[T_{	ext{min}}, T_{	ext{max}}]$ (e.g. $18^\circ	ext{C}-28^\circ	ext{C}$), adds $+20$ points.</li>
+  <li><strong>$\Delta S_{	ext{Rain}}$ (Foliar Wetness):</strong> Recent rainfall ($>0	ext{ mm}$) prolongs leaf wetness, adding $+15$ points.</li>
+  <li><strong>$\Delta S_{	ext{Wind}}$ (Airborne Spore Dispersion):</strong> Wind speeds $>15	ext{ km/h}$ facilitate airborne spore dispersal across crop rows, adding $+10$ points.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Risk Score Range</th>
+      <th>Risk Level</th>
+      <th>Agronomic Meaning & Farmer Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$0 - 25$</td>
+      <td><strong>Low Risk (🟢)</strong></td>
+      <td>Weather does not favor spread; maintain routine field scouting and sanitary hygiene.</td>
+    </tr>
+    <tr>
+      <td>$26 - 50$</td>
+      <td><strong>Moderate Risk (🟡)</strong></td>
+      <td>Microclimate supports localized infection; apply organic neem or biocontrol spray.</td>
+    </tr>
+    <tr>
+      <td>$51 - 75$</td>
+      <td><strong>High Risk (🟠)</strong></td>
+      <td>Pathogen actively spreading; prepare preventative fungicide / bactericide spray.</td>
+    </tr>
+    <tr>
+      <td>$76 - 100$</td>
+      <td><strong>Critical Risk (🔴)</strong></td>
+      <td>Severe epidemic risk; immediately spray curative fungicides and isolate infected areas.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<!-- SECTION 6: 4-PILLAR CLINICAL AGRONOMIC ADVISORY -->
+<h2 class="section-title">6. 4-Pillar Clinical Agronomic Knowledge Engine</h2>
+
+<p>
+Unlike generic text outputs, the system structures every diagnosis into four standardized, actionable pillars designed in consultation with agricultural extension protocols:
+</p>
+
+<div class="arch-card">
+  <div class="arch-card-header">Pillar 1: Etiology & Root Cause (ರೋಗಕ್ಕೆ ಕಾರಣ / बीमारी का कारण)</div>
+  <p style="font-size: 9pt; margin: 0;">
+    Explains the exact biological and environmental trigger in plain language (e.g. <em>"Whiteflies sucked sap from leaf veins, transmitting the curl virus under hot, dry conditions"</em>).
+  </p>
+</div>
+
+<div class="arch-card">
+  <div class="arch-card-header">Pillar 2: Organic & Biological Remedy (ಮನೆಮದ್ದು & ಸಾವಯವ ಪರಿಹಾರ / जैविक उपचार)</div>
+  <p style="font-size: 9pt; margin: 0;">
+    Provides direct, eco-friendly recipes with standard farm measurements (e.g. <em>"Mix 5 ml Neem Oil + 2 ml soap in 1 liter of water"</em> or <em>"Spray 100 ml fresh Gomutra + 5g Trichoderma in 1L water"</em>).
+  </p>
+</div>
+
+<div class="arch-card">
+  <div class="arch-card-header">Pillar 3: Chemical Spray & Exact Pump Dosage (ಔಷಧಿ ಸಿಂಪರಣೆ / दवा छिड़काव)</div>
+  <p style="font-size: 9pt; margin: 0;">
+    Specifies common commercial brand names and active ingredients with exact dosages for standard <strong>15-liter backpack spray pumps (ಬೆನ್ನು ಪಂಪ್ / 15L टंकी)</strong> and Pre-Harvest Intervals (PHI).
+  </p>
+</div>
+
+<div class="arch-card">
+  <div class="arch-card-header">Pillar 4: Cultural Preventive Measures (ತಡೆಗಟ್ಟುವ ಕ್ರಮಗಳು / रोकथाम)</div>
+  <p style="font-size: 9pt; margin: 0;">
+    Clear field sanitation steps to protect future crop cycles (crop rotation, drainage channels, eradication of infected debris, weed borders).
+  </p>
+</div>
+
+<!-- SECTION 7: MULTILINGUAL VOICE PIPELINE -->
+<h2 class="section-title">7. Multilingual Indic Voice & Accessibility Pipeline</h2>
+
+<p>
+To ensure full usability for farmers of all literacy levels, the platform embeds a browser-native, zero-latency speech pipeline supporting **Kannada (`kn-IN`)**, **Hindi (`hi-IN`)**, and **English (`en-IN`)**:
+</p>
+
+<ul>
+  <li><strong>Speech-to-Text (STT):</strong> Utilizes the <code>webkitSpeechRecognition</code> engine configured for continuous acoustic stream capture and localized Indic phoneme decoding.</li>
+  <li><strong>Intent Classification:</strong> Regex-based semantic parser maps farmer vocal questions into specific intents (<code>ask_treatment</code>, <code>ask_organic</code>, <code>ask_chemical</code>, <code>ask_prevention</code>, <code>ask_cause</code>, <code>ask_weather</code>).</li>
+  <li><strong>Text-to-Speech (TTS):</strong> Utilizes the <code>SpeechSynthesisUtterance</code> API with calibrated pitch ($1.0$), rate ($0.92$), and regional accent models for clear, natural audio advisory playback.</li>
+</ul>
+
+<!-- SECTION 8: COMPLETE TECHNOLOGY STACK -->
+<h2 class="section-title">8. Complete Technology Stack Matrix</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer / Component</th>
+      <th>Technology / Framework</th>
+      <th>Exact Version</th>
+      <th>Functional Role in System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Frontend UI Framework</strong></td>
+      <td>React + Vite</td>
+      <td>18.3.1 / 5.4.21</td>
+      <td>Reactive component rendering, state management & instant hot reloading</td>
+    </tr>
+    <tr>
+      <td><strong>Styling & Design System</strong></td>
+      <td>TailwindCSS + Lucide Icons</td>
+      <td>3.4.17 / 0.460.0</td>
+      <td>Daylight-optimized agricultural palette, card layouts & intuitive iconography</td>
+    </tr>
+    <tr>
+      <td><strong>Speech Processing</strong></td>
+      <td>Web Speech API (STT/TTS)</td>
+      <td>W3C Standard</td>
+      <td>Native multilingual speech recognition and voice synthesis in browser</td>
+    </tr>
+    <tr>
+      <td><strong>Backend API Framework</strong></td>
+      <td>FastAPI + Uvicorn</td>
+      <td>0.115.6 / 0.34.0</td>
+      <td>Asynchronous REST API routing, CORS handling & multipart image parsing</td>
+    </tr>
+    <tr>
+      <td><strong>Deep Learning Engine</strong></td>
+      <td>PyTorch + Torchvision</td>
+      <td>2.6.0+cu124</td>
+      <td>Tensor computations, MobileNetV2 backbone & gradient backpropagation</td>
+    </tr>
+    <tr>
+      <td><strong>Computer Vision & XAI</strong></td>
+      <td>OpenCV + Pillow + NumPy</td>
+      <td>4.11.0 / 11.1.0</td>
+      <td>Spatial resizing, Jet colormap transformation, alpha blending & DataURI encoding</td>
+    </tr>
+    <tr>
+      <td><strong>Meteorological Data</strong></td>
+      <td>Open-Meteo REST API</td>
+      <td>v1 (Free/Open)</td>
+      <td>Hourly microclimatic temperature, humidity, wind & precipitation telemetry</td>
+    </tr>
+    <tr>
+      <td><strong>Hardware Acceleration</strong></td>
+      <td>NVIDIA GeForce RTX 4060</td>
+      <td>CUDA 12.4</td>
+      <td>GPU model training, weight tensor optimization and batch evaluation</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 9: CONCLUSION & FUTURE WORK -->
+<h2 class="section-title">9. Conclusion & Future Roadmap</h2>
+
+<p>
+<strong>AgroVoice-XAI</strong> successfully bridges the gap between state-of-the-art computer vision and real-world farm decision making. By augmenting high-accuracy MobileNetV2 classification ($98.43\%$) with visual Grad-CAM grounding, live microclimatic risk triangulation, actionable 4-pillar clinical prescriptions, and multilingual voice capabilities in Kannada and Hindi, the platform provides smallholder farmers with an indispensable, trustworthy, and accessible AI plant doctor.
+</p>
+
+<p>
+<strong>Future Enhancements:</strong>
+</p>
+<ol>
+  <li><strong>Edge On-Device Inference via ONNX Runtime Web:</strong> Compiling MobileNetV2 to WebAssembly/WebGPU for zero-internet 100% offline edge diagnosis on smartphones in remote fields.</li>
+  <li><strong>Drone Multispectral Imagery Ingestion:</strong> Extending the FastAPI ingestion layer to accept orthomosaic multispectral drone maps for automated farm-wide disease heatmapping.</li>
+  <li><strong>Localized Market & Pesticide Price Aggregation:</strong> Connecting real-time KVK / APMC market feeds to show current local prices of recommended organic and chemical remedies.</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "en": {
+    "app_title": "Smart Crop Advisory",
+    "voice_result_template": "Your crop has {disease}. Certainty is {confidence} percent. Cause: {cause}. Recommended organic remedy: {organic}. Recommended medicine spray: {chemical}. Prevention steps: {prevention}.",
+    "voice_healthy_template": "Great news! Your {crop} leaf is healthy and clean. No medicine or spray is needed right now.",
+    "voice_treatment_template": "For {disease}, Organic remedy: {organic}. Medicine spray: {chemical}.",
+    "voice_organic_template": "Home & organic remedy for {disease}: {organic}",
+    "voice_chemical_template": "Medicine spray for {disease}: {chemical}",
+    "voice_prevention_template": "To prevent {disease}: {prevention}",
+    "voice_cause_template": "The reason for {disease} is: {cause}",
+    "voice_weather_template": "Field weather in {location}: Temperature {temp} degrees, humidity {humidity} percent, wind speed {wind} km per hour, rain {rain} mm.",
+    "risk_low": "Low Spread Risk",
+    "risk_moderate": "Medium Spread Risk",
+    "risk_high": "High Spread Risk",
+    "risk_critical": "Severe Spread Risk",
+    "risk_triggers": {
+      "humidity_high": "High humidity ({humidity}%) keeps leaves wet, which allows fungus to spread quickly.",
+      "temp_optimal": "Farm temperature ({temp}°C) is warm and favorable for disease growth.",
+      "temp_near": "Farm temperature ({temp}°C) is getting close to the level where disease spreads.",
+      "rain_wetness": "Recent rain ({rain} mm) left leaves wet. Avoid overhead watering today.",
+      "wind_dispersion": "Breezy wind ({wind} km/h) can blow disease spores to nearby healthy plants.",
+      "baseline_pathogen": "This disease can damage leaves quickly if not treated soon.",
+      "unfavourable_weather": "Weather today is moderate, but treating the leaf now will stop it from spreading.",
+      "healthy_leaf": "Your leaf is healthy. Current weather is safe for your crop."
+    },
+    "risk_explanation_template": "Due to {disease} and today's weather ({temp}°C, {humidity}% humidity), there is a {level} ({score}/100) of disease spreading.",
+    "voice_intents": {
+      "greeting": "Namaste farmer! Ask me about disease treatment, organic remedies, medicine sprays, prevention, or today's weather.",
+      "ask_treatment": "For {disease}: Organic remedy is {organic}. Medicine spray is {chemical}.",
+      "ask_organic": "Organic remedy for {disease}: {organic}",
+      "ask_chemical": "Medicine spray for {disease}: {chemical}",
+      "ask_prevention": "To keep your crop safe: {prevention}",
+      "ask_cause": "The reason for {disease} is: {cause}",
+      "ask_weather": "Weather in {location}: {temp} degrees and {humidity} percent humidity.",
+      "unknown": "I could not hear clearly. Please ask about disease treatment, medicine spray, organic remedy, prevention, or weather.",
+      "ask_severity": "{disease} has a {severity} severity level. Recommended organic remedy: {organic}. Recommended medicine spray: {chemical}."
+    }
+  },
+  "hi": {
+    "app_title": "स्मार्ट फसल सलाहकार",
+    "voice_result_template": "आपकी फसल में {disease} पाया गया है। विश्वास स्तर {confidence} प्रतिशत है। बीमारी का कारण: {cause}। जैविक उपाय: {organic}। दवा छिड़काव: {chemical}। बचाव के उपाय: {prevention}।",
+    "voice_healthy_template": "बधाई हो! आपका {crop} का पत्ता बिल्कुल स्वस्थ और साफ है। अभी किसी दवा या छिड़काव की जरूरत नहीं है।",
+    "voice_treatment_template": "{disease} के लिए जैविक उपाय: {organic}। रासायनिक दवा: {chemical}।",
+    "voice_organic_template": "{disease} के लिए घरेलू व जैविक उपाय: {organic}",
+    "voice_chemical_template": "{disease} के लिए दवा छिड़काव: {chemical}",
+    "voice_prevention_template": "{disease} से बचाव के उपाय: {prevention}",
+    "voice_cause_template": "{disease} का कारण: {cause}",
+    "voice_weather_template": "{location} में खेत का मौसम: तापमान {temp} डिग्री, नमी {humidity} प्रतिशत, हवा {wind} किमी/घंटा, बारिश {rain} मिमी।",
+    "risk_low": "कम खतरा",
+    "risk_moderate": "मध्यम खतरा",
+    "risk_high": "अधिक खतरा",
+    "risk_critical": "गंभीर खतरा",
+    "risk_triggers": {
+      "humidity_high": "हवा में नमी ({humidity}%) अधिक होने से पत्तियां गीली हैं, जिससे फफूंद तेजी से फैल सकती है।",
+      "temp_optimal": "खेत का तापमान ({temp}°C) बीमारी के फैलने के अनुकूल है।",
+      "temp_near": "खेत का तापमान ({temp}°C) बीमारी फैलने के स्तर के करीब है।",
+      "rain_wetness": "बारिश ({rain} मिमी) के कारण पत्तियां गीली हैं। आज पत्तियों के ऊपर से पानी न डालें।",
+      "wind_dispersion": "हवा ({wind} किमी/घंटा) बीमारी को पास के स्वस्थ पौधों में फैला सकती है।",
+      "baseline_pathogen": "समय पर दवा न डालने पर यह बीमारी तेजी से फसल को नुकसान पहुंचा सकती है।",
+      "unfavourable_weather": "आज मौसम सामान्य है, लेकिन समय रहते दवा डालने से बीमारी पूरी तरह रुक जाएगी।",
+      "healthy_leaf": "आपकी फसल पूरी तरह स्वस्थ है और मौसम भी सुरक्षित है।"
+    },
+    "risk_explanation_template": "{disease} और आज के मौसम ({temp}°C, {humidity}% नमी) के कारण बीमारी फैलने का {level} ({score}/100) है।",
+    "voice_intents": {
+      "greeting": "नमस्ते किसान भाई! अपनी फसल की बीमारी, दवा छिड़काव, जैविक उपाय, रोकथाम या मौसम के बारे में पूछें।",
+      "ask_treatment": "{disease} के लिए जैविक उपाय: {organic}। दवा छिड़काव: {chemical}।",
+      "ask_organic": "{disease} के लिए जैविक उपाय: {organic}",
+      "ask_chemical": "{disease} के लिए दवा छिड़काव: {chemical}",
+      "ask_prevention": "फसल को सुरक्षित रखने के लिए: {prevention}",
+      "ask_cause": "{disease} का कारण: {cause}",
+      "ask_weather": "{location} में तापमान {temp} डिग्री और नमी {humidity} प्रतिशत है।",
+      "unknown": "कृपया साफ आवाज में पूछें: बीमारी का इलाज, दवा का नाम, जैविक उपाय, रोकथाम या मौसम।",
+      "ask_severity": "{disease} में {severity} स्तर का खतरा है। जैविक उपाय: {organic}। दवा छिड़काव: {chemical}।"
+    }
+  },
+  "kn": {
+    "app_title": "ಸ್ಮಾರ್ಟ್ ಬೆಳೆ ಸಲಹೆಗಾರ",
+    "voice_result_template": "ನಿಮ್ಮ ಬೆಳೆಗೆ {disease} ಬಂದಿದೆ. ಖಚಿತತೆ {confidence} ಶೇಕಡಾ. ರೋಗದ ಕಾರಣ: {cause}. ಸಾವಯವ ಪರಿಹಾರ: {organic}. ಔಷಧಿ ಸಿಂಪರಣೆ: {chemical}. ಮುನ್ನೆಚ್ಚರಿಕಾ ಕ್ರಮಗಳು: {prevention}.",
+    "voice_healthy_template": "ಉತ್ತಮ ಸುದ್ದಿ! ನಿಮ್ಮ {crop} ಎಲೆ ಸಂಪೂರ್ಣವಾಗಿ ಆರೋಗ್ಯವಾಗಿದೆ. ಈಗ ಯಾವುದೇ ಔಷಧಿ ಸಿಂಪಡಿಸುವ ಅಗತ್ಯವಿಲ್ಲ.",
+    "voice_treatment_template": "{disease} ರೋಗಕ್ಕೆ, ಸಾವಯವ ಪರಿಹಾರ: {organic}. ಔಷಧಿ ಸಿಂಪರಣೆ: {chemical}.",
+    "voice_organic_template": "{disease} ರೋಗಕ್ಕೆ ಸಾವಯವ ಮನೆಮದ್ದು: {organic}",
+    "voice_chemical_template": "{disease} ರೋಗಕ್ಕೆ ಔಷಧಿ ಸಿಂಪರಣೆ: {chemical}",
+    "voice_prevention_template": "{disease} ರೋಗ ತಡೆಗಟ್ಟಲು: {prevention}",
+    "voice_cause_template": "{disease} ರೋಗಕ್ಕೆ ಕಾರಣ: {cause}",
+    "voice_weather_template": "{location} ಹೊಲದ ಹವಾಮಾನ: ತಾಪಮಾನ {temp} ಡಿಗ್ರಿ, ತೇವಾಂಶ {humidity} ಶೇಕಡಾ, ಗಾಳಿ {wind} ಕಿ.ಮೀ/ಗಂಟೆ, ಮಳೆ {rain} ಮಿ.ಮೀ.",
+    "risk_low": "ಕಡಿಮೆ ಹರಡುವಿಕೆ ಅಪಾಯ",
+    "risk_moderate": "ಮಧ್ಯಮ ಹರಡುವಿಕೆ ಅಪಾಯ",
+    "risk_high": "ಹೆಚ್ಚಿನ ಹರಡುವಿಕೆ ಅಪಾಯ",
+    "risk_critical": "ತೀವ್ರ ಹರಡುವಿಕೆ ಅಪಾಯ",
+    "risk_triggers": {
+      "humidity_high": "ಗಾಳಿಯಲ್ಲಿ ತೇವಾಂಶ ({humidity}%) ಹೆಚ್ಚಿರುವುದರಿಂದ ಎಲೆಗಳು ಒದ್ದೆಯಾಗಿ ರೋಗ ಬೇಗ ಹರಡಬಹುದು.",
+      "temp_optimal": "ಹೊಲದ ತಾಪಮಾನವು ({temp}°C) ರೋಗ ಹರಡಲು ಪೂರಕವಾಗಿದೆ.",
+      "temp_near": "ಹೊಲದ ತಾಪಮಾನವು ({temp}°C) ರೋಗ ಹರಡುವ ಮಟ್ಟಕ್ಕೆ ಹತ್ತಿರದಲ್ಲಿದೆ.",
+      "rain_wetness": "ಮಳೆಯಿಂದಾಗಿ ({rain} ಮಿ.ಮೀ) ಎಲೆಗಳು ತೇವವಾಗಿವೆ. ಇಂದು ಎಲೆಗಳ ಮೇಲೆ ನೀರು ಹಾಯಿಸಬೇಡಿ.",
+      "wind_dispersion": "ಬಲವಾದ ಗಾಳಿಯು ({wind} ಕಿ.ಮೀ/ಗಂ) ರೋಗದ ಕಣಗಳನ್ನು ಪಕ್ಕದ ಗಿಡಗಳಿಗೂ ಹರಡಬಹುದು.",
+      "baseline_pathogen": "ತಕ್ಷಣ ಔಷಧಿ ಸಿಂಪಡಿಸದಿದ್ದರೆ ಈ ರೋಗ ಇಡೀ ಬೆಳೆಗೆ ಹಾನಿ ಮಾಡಬಹುದು.",
+      "unfavourable_weather": "ಹವಾಮಾನ ಸಾಮಾನ್ಯವಾಗಿದ್ದರೂ, ಈಗಲೇ ಚಿಕಿತ್ಸೆ ನೀಡಿದರೆ ರೋಗ ಸಂಪೂರ್ಣ ನಿಯಂತ್ರಣಕ್ಕೆ ಬರುತ್ತದೆ.",
+      "healthy_leaf": "ನಿಮ್ಮ ಬೆಳೆ ಸಂಪೂರ್ಣ ಆರೋಗ್ಯವಾಗಿದೆ ಮತ್ತು ಹವಾಮಾನ ಸುರಕ್ಷಿತವಾಗಿದೆ."
+    },
+    "risk_explanation_template": "{disease} ಮತ್ತು ಇಂದಿನ ಹವಾಮಾನದ ({temp}°C, {humidity}% ತೇವಾಂಶ) ಕಾರಣದಿಂದ ರೋಗ ಹರಡುವ {level} ({score}/100) ಅಪಾಯವಿದೆ.",
+    "voice_intents": {
+      "greeting": "ನಮಸ್ಕಾರ ರೈತ ಬಾಂಧವರೇ! ಬೆಳೆಯ ರೋಗ, ಸಾವಯವ ಪರಿಹಾರ, ಸಿಂಪಡಿಸುವ ಔಷಧಿ, ತಡೆಗಟ್ಟುವ ಕ್ರಮ ಅಥವಾ ಹವಾಮಾನದ ಬಗ್ಗೆ ಕೇಳಿ.",
+      "ask_treatment": "{disease} ರೋಗಕ್ಕೆ ಸಾವಯವ ಪರಿಹಾರ: {organic}. ಔಷಧಿ ಸಿಂಪರಣೆ: {chemical}.",
+      "ask_organic": "{disease} ರೋಗಕ್ಕೆ ಸಾವಯವ ಪರಿಹಾರ: {organic}",
+      "ask_chemical": "{disease} ರೋಗಕ್ಕೆ ಔಷಧಿ ಸಿಂಪರಣೆ: {chemical}",
+      "ask_prevention": "ಬೆಳೆ ರಕ್ಷಣೆಗಾಗಿ: {prevention}",
+      "ask_cause": "{disease} ರೋಗಕ್ಕೆ ಕಾರಣ: {cause}",
+      "ask_weather": "{location} ನಲ್ಲಿ ತಾಪಮಾನ {temp} ಡಿಗ್ರಿ ಮತ್ತು ತೇವಾಂಶ {humidity} ಶೇಕಡಾ ಇದೆ.",
+      "unknown": "ದಯವಿಟ್ಟು ಸ್ಪಷ್ಟವಾಗಿ ಕೇಳಿ: ರೋಗದ ಔಷಧಿ, ಸಾವಯವ ಪರಿಹಾರ, ಸಿಂಪಡಿಸುವ ಅಳತೆ, ಮುನ್ನೆಚ್ಚರಿಕೆ ಅಥವಾ ಹವಾಮಾನ.",
+      "ask_severity": "{disease} ರೋಗವು {severity} ತೀವ್ರತೆಯನ್ನು ಹೊಂದಿದೆ. ಸಾವಯವ ಪರಿಹಾರ: {organic}. ಔಷಧಿ ಸಿಂಪರಣೆ: {chemical}."
+    }
+  }
+}

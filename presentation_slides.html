@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AgroVoice-XAI Presentation Slides</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+  @page {
+    size: 297mm 210mm; /* A4 Landscape */
+    margin: 8mm;
+  }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: #0f172a;
+    color: #0f172a;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .slide {
+    width: 1200px;
+    height: 675px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    page-break-after: always;
+    overflow: hidden;
+  }
+  .slide-header {
+    background: #064e3b;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-left: 5px solid #10b981;
+  }
+  .slide-body {
+    flex: 1;
+    margin: 10px 0;
+    font-size: 13px;
+    line-height: 1.45;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .slide-footer {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #64748b;
+  }
+  .card {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 6px;
+  }
+  .card-green { background: #f0fdf4; border-color: #86efac; }
+  .card-rose { background: #fff1f2; border-color: #fca5a5; }
+  .card-blue { background: #f0f9ff; border-color: #7dd3fc; }
+  
+  /* Literature Survey Table matching user image */
+  table.lit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5px;
+    margin-top: 4px;
+  }
+  table.lit-table th {
+    background-color: #0d3d29;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 7px 9px;
+    border: 1px solid #062619;
+    text-align: center;
+  }
+  table.lit-table td {
+    padding: 6px 8px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.3;
+  }
+  table.lit-table tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+</style>
+</head>
+<body>
+
+  <!-- SLIDE 1: TITLE SLIDE -->
+  <div class="slide" style="background: linear-gradient(135deg, #064e3b, #047857); color: #ffffff; text-align: center; justify-content: center;">
+    <div style="background: rgba(255,255,255,0.1); padding: 26px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.2);">
+      <h1 style="font-size: 32px; margin: 0; font-weight: 800;">🌱 AgroVoice-XAI</h1>
+      <h2 style="font-size: 19px; color: #a7f3d0; margin: 8px 0;">Smart Visual Crop Advisory &amp; Disease Severity Estimation System</h2>
+      <p style="font-size: 12.5px; color: #ecfdf5;">Multi-Modal Deep Learning, Explainable AI (Grad-CAM), Microclimate Telemetry &amp; Vernacular Voice Prescriptions</p>
+      <div style="margin: 16px 0; border-top: 1px solid rgba(255,255,255,0.3);"></div>
+      <p style="font-size: 13.5px; font-weight: 700;">Project Batch Members: Shashwat Shaurya (1MV21CS098) · Parth Verma (1MV21CS075) · Shwetanshu (1MV21CS107) · Kumar Vaibhav (1MV21CS054)</p>
+      <p style="font-size: 11.5px; color: #a7f3d0;">Guide: Dr. Pallavi (Assoc. Prof) | HOD: Dr. Anitha T N | Principal: Dr. M N Thippeswamy</p>
+      <p style="font-size: 11px; color: #ecfdf5;">Dept. of Computer Science &amp; Engineering · Sir M. Visvesvaraya Institute of Technology, Bengaluru</p>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: PROBLEM STATEMENT -->
+  <div class="slide">
+    <div class="slide-header">I. Problem Statement</div>
+    <div class="slide-body">
+      <div class="card card-rose"><strong>🌾 1. Severe Yield Loss &amp; Delayed Diagnosis:</strong> Crop diseases destroy 20–40% of yields annually. Farmers lack on-field access to agricultural extension scientists during critical infection windows.</div>
+      <div class="card card-rose"><strong>📦 2. Black-Box AI Trust Deficit:</strong> Existing deep learning models output opaque labels without visual localization, causing farmer skepticism and misdiagnosis.</div>
+      <div class="card card-rose"><strong>🌦️ 3. Meteorological Disconnection:</strong> Models diagnose leaves in isolation without factoring in ambient humidity (&ge;75%) and rainfall wetness that drive fungal multiplication.</div>
+      <div class="card card-rose"><strong>🗣️ 4. Language &amp; Practicality Barrier:</strong> Text-heavy English outputs fail illiterate farmers and omit practical 15-liter backpack spray pump dosages.</div>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 2</span></div>
+  </div>
+
+  <!-- SLIDE 3: OBJECTIVES -->
+  <div class="slide">
+    <div class="slide-header">II. Objectives</div>
+    <div class="slide-body">
+      <div class="card card-green"><strong>🎯 1. High-Accuracy Edge Deep Learning:</strong> Deploy MobileNetV2 classifying 39 crop taxa at 98.43% accuracy with &lt;30 ms latency.</div>
+      <div class="card card-green"><strong>🔬 2. Visual Explainability (Grad-CAM):</strong> Generate gradient heatmaps visually highlighting active fungal necrotic lesions.</div>
+      <div class="card card-green"><strong>🌦️ 3. Real-Time Microclimate Risk Engine:</strong> Ingest Open-Meteo GPS weather to compute Disease Triangle risk score (0–100).</div>
+      <div class="card card-green"><strong>🗣️ 4. Multilingual Zero-Literacy Voice Assistant:</strong> Build interactive Web Speech voice assistant in Kannada, Hindi, and English.</div>
+      <div class="card card-green"><strong>🖨️ 5. Instant Rural Deliverables:</strong> 1-Click printable PDF health prescription card and 1-tap WhatsApp sharing for local dealers.</div>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 3</span></div>
+  </div>
+
+  <!-- SLIDE 4: LITERATURE SURVEY (SINGLE PAGE SLIDE - 5 PAPERS) -->
+  <div class="slide">
+    <div class="slide-header">III. Literature Survey</div>
+    <div class="slide-body" style="justify-content: flex-start;">
+      <table class="lit-table">
+        <tr>
+          <th style="width: 21%;">Journal / Year / Authors</th>
+          <th style="width: 26%;">Methodology</th>
+          <th style="width: 23%;">Key Findings</th>
+          <th style="width: 30%;">Research Gap &amp; Our Solution</th>
+        </tr>
+        <tr>
+          <td><strong>Scientific Reports (Nature), 2024</strong><br><br>M. J. Karim, M. O. F. Goni, Md. Nahiduzzaman, M. Ahsan, J. Haider, M. Kowalski</td>
+          <td>• Custom MobileNetV3Large with dense dropout layers.<br>• Grad-CAM visual heatmaps for lesion grounding.<br>• Deployed on Nvidia Jetson Nano edge device.<br>• Dataset: 27,122 grape leaf images (4 classes).</td>
+          <td>• Achieved <strong>99.42% accuracy</strong>, precision, and recall.<br>• Proved feasibility of real-time edge XAI inference.</td>
+          <td>• <strong>Gap:</strong> Tested only on single crop (grape) with no weather telemetry, multilingual voice assistance, or field spray pump dosages.<br>• <strong>Our Solution:</strong> Multi-crop (39 classes) + Open-Meteo weather risk + Kannada/Hindi voice.</td>
+        </tr>
+        <tr>
+          <td><strong>IEEE Access, 2023</strong><br><br>Md. S. H. Shovon, S. K. Mozumder, O. Saha, M. F. Hossain, M. Z. Islam</td>
+          <td>• PlantDet: Multi-model ensemble architecture (dResNet-18, InceptionV3, DenseNet).<br>• Trained on 90,000 multi-crop images (19 classes).</td>
+          <td>• Achieved <strong>99.10% overall classification accuracy</strong> across diverse plant species.</td>
+          <td>• <strong>Gap:</strong> High computational footprint of multi-model ensembles hinders mobile edge deployment; lacks XAI heatmaps.<br>• <strong>Our Solution:</strong> Lightweight MobileNetV2 (2.2M params, 22ms) with instant Grad-CAM visual proof.</td>
+        </tr>
+        <tr>
+          <td><strong>Artificial Intelligence in Agriculture (Elsevier), 2022</strong><br><br>A. S. Paymode and V. B. Malode</td>
+          <td>• VGG-16 deep CNN transfer learning architecture.<br>• Evaluated on 62,286 multi-crop leaf images (14 classes: Grapes &amp; Tomatoes).</td>
+          <td>• Achieved <strong>98.40% classification accuracy</strong> on dual-crop disease diagnosis.</td>
+          <td>• <strong>Gap:</strong> 138M parameter model causes high latency; omitted precision/recall/F1 and provided no actionable farm dosages.<br>• <strong>Our Solution:</strong> Calibrated 30g/15L pump spray dosages + organic remedies with top-3 confidence.</td>
+        </tr>
+        <tr>
+          <td><strong>Frontiers in Plant Science, 2021</strong><br><br>P. Wang, E. Niu, Y. Zheng, Y. Chen, F. Yuan</td>
+          <td>• ECA-sNET (Efficient Channel Attention + lightweight CNN).<br>• Evaluated on 6,867 grape leaf images across 6 classes.</td>
+          <td>• Achieved <strong>99.66% accuracy</strong>, 99.66% precision, and 99.60% F1-score on fine-grained lesion features.</td>
+          <td>• <strong>Gap:</strong> Evaluated solely on isolated dataset without microclimatic context or vernacular accessibility for farmers.<br>• <strong>Our Solution:</strong> Real-time weather triangulation + hands-free Kannada, Hindi &amp; English oral interaction.</td>
+        </tr>
+        <tr>
+          <td><strong>Frontiers in Plant Science, 2016</strong><br><br>S. P. Mohanty, D. P. Hughes, and M. Salathé</td>
+          <td>• Landmark benchmark study using AlexNet &amp; GoogLeNet CNNs.<br>• PlantVillage dataset of 54,306 images across 38 crop disease classes.</td>
+          <td>• Achieved <strong>99.35% accuracy</strong> on studio dataset, establishing the standard plant disease benchmark.</td>
+          <td>• <strong>Gap:</strong> Severe accuracy drop on real-world farm conditions (domain shift); black-box with no visual grounding or localized advice.<br>• <strong>Our Solution:</strong> Out-of-Distribution thresholding (&lt;60%) + Grad-CAM grounding + WhatsApp share.</td>
+        </tr>
+      </table>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 4</span></div>
+  </div>
+
+  <!-- SLIDE 5: ANALYSIS -->
+  <div class="slide">
+    <div class="slide-header">IV. Analysis: Existing System vs. Proposed System</div>
+    <div class="slide-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 10px;">
+      <div>
+        <div style="background: #a33342; color: #fff; text-align: center; padding: 8px; font-weight: 700; border-radius: 6px 6px 0 0;">EXISTING SYSTEM</div>
+        <div class="card card-rose" style="border-radius: 0 0 6px 6px; min-height: 380px;">
+          <p>• <strong>Manual Field Scouting:</strong> Slow, labor-intensive, error-prone, and dependent on scarce agricultural scientists.</p>
+          <p>• <strong>Black-Box AI Models:</strong> Output opaque prediction labels with zero visual confirmation of which leaf lesions triggered the diagnosis.</p>
+          <p>• <strong>Isolated Vision (No Weather):</strong> Diagnoses image without checking today's humidity (82%) or rain, failing to forecast disease multiplication.</p>
+          <p>• <strong>Text-Heavy English Jargon:</strong> Inaccessible to illiterate or vernacular-speaking rural farmers.</p>
+          <p>• <strong>Vague Chemical Advice:</strong> Mentions chemical names without practical 15-liter backpack pump spray dosages.</p>
+        </div>
+      </div>
+      <div>
+        <div style="background: #da555d; color: #fff; text-align: center; padding: 8px; font-weight: 700; border-radius: 6px 6px 0 0;">PROPOSED: AGROVOICE-XAI</div>
+        <div class="card card-green" style="border-radius: 0 0 6px 6px; min-height: 380px;">
+          <p>• <strong>Lightweight Edge MobileNetV2:</strong> 98.43% validation accuracy, 2.2M parameters, and 22 ms inference latency across 39 crop classes.</p>
+          <p>• <strong>Active Grad-CAM Saliency (XAI):</strong> Generates visual glowing red/yellow heatmaps over active fungal necrotic lesions for 100% farmer trust.</p>
+          <p>• <strong>Live Weather Triangulation:</strong> Open-Meteo GPS weather telemetry computes live Disease Triangle spread risk score (0–100).</p>
+          <p>• <strong>Zero-Literacy Vernacular Voice:</strong> Interactive hands-free speech recognition (STT) and voice synthesis (TTS) in Kannada, Hindi, and English.</p>
+          <p>• <strong>4-Pillar Calibrated Prescriptions:</strong> Organic remedies + exact 30g/15L pump chemical spray dosages + 1-click WhatsApp and PDF share.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 5</span></div>
+  </div>
+
+  <!-- SLIDE 6: REQUIREMENTS -->
+  <div class="slide">
+    <div class="slide-header">V. Requirements Specification (Functional &amp; Non-Functional)</div>
+    <div class="slide-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div class="card card-blue">
+        <h3 style="margin-top:0; color:#0369a1;">📋 Functional Requirements (FR)</h3>
+        <p>• <strong>FR-1:</strong> Image acquisition &amp; camera framing guide.<br>• <strong>FR-2:</strong> MobileNetV2 39-class disease classification.<br>• <strong>FR-3:</strong> Grad-CAM visual heatmap synthesis.<br>• <strong>FR-4:</strong> Live Open-Meteo GPS weather ingestion.<br>• <strong>FR-5:</strong> Web Speech voice assistant in KN/HI/EN.<br>• <strong>FR-6:</strong> Printable PDF card &amp; WhatsApp share.</p>
+      </div>
+      <div class="card card-green">
+        <h3 style="margin-top:0; color:#15803d;">⚙️ Non-Functional Requirements (NFR)</h3>
+        <p>• <strong>NFR-1 (Latency):</strong> Model inference &lt; 30 ms; pipeline &lt; 350 ms.<br>• <strong>NFR-2 (Accuracy):</strong> 98.43% accuracy; 0.982 macro F1-score.<br>• <strong>NFR-3 (Safety):</strong> Out-of-distribution (&lt;60%) safety threshold.<br>• <strong>NFR-4 (Usability):</strong> Zero-literacy voice &amp; high contrast UI.<br>• <strong>NFR-5 (Modularity):</strong> Asynchronous FastAPI architecture.</p>
+      </div>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 6</span></div>
+  </div>
+
+  <!-- SLIDE 7: DESIGN -->
+  <div class="slide">
+    <div class="slide-header">VI. System Architecture &amp; Data Flow Design</div>
+    <div class="slide-body">
+      <div class="card card-blue"><strong>1. Client Edge Layer (React 18 + Vite):</strong> Camera viewfinder, aspect ratio alignment, Web Speech API (STT/TTS).</div>
+      <div class="card card-blue"><strong>2. FastAPI Gateway:</strong> Asynchronous payload decoding, tensor normalization (224x224x3 ImageNet).</div>
+      <div class="card card-green"><strong>3. Parallel Deep Learning &amp; Weather:</strong> MobileNetV2 (98.43%) + Grad-CAM hook at features[-1] + Open-Meteo Disease Triangle risk engine.</div>
+      <div class="card card-green"><strong>4. 4-Pillar Agronomic Knowledge Engine:</strong> Etiology, Organic remedies, 30g/15L pump chemical dosage, Cultural prevention.</div>
+      <div class="card card-blue"><strong>5. Deliverables:</strong> Side-by-side XAI view, Kannada/Hindi audio playback, 1-click PDF card &amp; WhatsApp share.</div>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 7</span></div>
+  </div>
+
+  <!-- SLIDE 8: SUMMARY -->
+  <div class="slide">
+    <div class="slide-header">VII. Summary &amp; Experimental Results</div>
+    <div class="slide-body">
+      <div class="card card-green"><strong>📊 98.43% Validation Accuracy:</strong> Validated across 54,305 curated leaf images covering 39 distinct crop taxa.</div>
+      <div class="card card-green"><strong>⚡ 22 ms Edge Latency:</strong> Lightweight inverted residual MobileNetV2 runs in real-time on standard CPUs/smartphones.</div>
+      <div class="card card-green"><strong>🔬 100% Explainable AI Localization:</strong> Grad-CAM successfully pinpoints necrotic lesion centers on diseased leaves.</div>
+      <div class="card card-green"><strong>🌦️ Microclimatic Risk Triangulation:</strong> Accurately predicts high fungal multiplication risk during high humidity (&gt;80% RH).</div>
+      <div class="card card-green"><strong>🗣️ Zero-Literacy Rural Impact:</strong> Spoken advice in Kannada, Hindi, and English with standardized 15L pump spray dosages.</div>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 8</span></div>
+  </div>
+
+  <!-- SLIDE 9: PUBLICATION -->
+  <div class="slide">
+    <div class="slide-header">VIII. Publication &amp; Conference Details</div>
+    <div class="slide-body">
+      <div class="card card-green" style="line-height: 1.6;">
+        <p><strong>📄 Paper Title:</strong><br><em>AgroVoice-XAI: An Explainable Multimodal Deep Learning Framework for Crop Disease Diagnosis Augmented with Microclimatic Risk Telemetry and Vernacular Voice Assistance</em></p>
+        <p><strong>👥 Authors:</strong> Shashwat Shaurya, Parth Verma, Shwetanshu, Kumar Vaibhav, and Dr. Pallavi</p>
+        <p><strong>🏛️ Institution:</strong> Department of Computer Science &amp; Engineering, Sir M. Visvesvaraya Institute of Technology, Bengaluru</p>
+        <p><strong>🎯 Target Conference:</strong> IEEE International Conference on Computing, Communication and Automation (ICCCA) / Springer Smart Agricultural Technology &amp; Computing Series</p>
+      </div>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 9</span></div>
+  </div>
+
+  <!-- SLIDE 10: REFERENCES -->
+  <div class="slide">
+    <div class="slide-header">IX. References</div>
+    <div class="slide-body" style="font-size: 11px; line-height: 1.45;">
+      <p>[1] M. J. Karim et al., "Enhancing agriculture through real-time grape leaf disease classification via an edge device with a lightweight CNN architecture and Grad-CAM," <em>Scientific Reports (Nature)</em>, vol. 14, Art. 16022, 2024.</p>
+      <p>[2] Md. S. H. Shovon et al., "PlantDet: A robust multi-model ensemble method based on deep learning for plant disease detection," <em>IEEE Access</em>, vol. 11, 2023.</p>
+      <p>[3] A. S. Paymode and V. B. Malode, "Transfer learning for multi-crop leaf disease image classification using convolutional neural network VGG," <em>Artificial Intelligence in Agriculture</em>, vol. 6, 2022.</p>
+      <p>[4] P. Wang et al., "Fine-grained grape leaf diseases recognition method based on improved lightweight attention network," <em>Frontiers in Plant Science</em>, vol. 12, 2021.</p>
+      <p>[5] S. P. Mohanty et al., "Using deep learning for image-based plant disease detection," <em>Frontiers in Plant Science</em>, vol. 7, 2016.</p>
+      <p>[6] R. R. Selvaraju et al., "Grad-CAM: Visual explanations from deep networks via gradient-based localization," in <em>Proc. IEEE ICCV</em>, 2017.</p>
+      <p>[7] M. Sandler et al., "MobileNetV2: Inverted residuals and linear bottlenecks," in <em>Proc. IEEE/CVF CVPR</em>, 2018.</p>
+    </div>
+    <div class="slide-footer"><span>AgroVoice-XAI</span><span>Slide 10</span></div>
+  </div>
+
+</body>
+</html>

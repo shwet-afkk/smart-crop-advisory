@@ -1,0 +1,20 @@
+{
+  "classes": [
+    "Tomato___Early_Blight",
+    "Tomato___Late_Blight",
+    "Tomato___Healthy",
+    "Potato___Early_Blight",
+    "Potato___Late_Blight",
+    "Potato___Healthy",
+    "Corn___Common_Rust",
+    "Corn___Healthy",
+    "Pepper_Bell___Bacterial_Spot",
+    "Pepper_Bell___Healthy",
+    "Rice___Bacterial_Leaf_Blight",
+    "Rice___Healthy",
+    "Wheat___Leaf_Rust",
+    "Wheat___Healthy"
+  ],
+  "img_size": 224,
+  "num_classes": 14
+}
