@@ -32,3 +32,7 @@ Thumbs.db
 
 # Office temporary lock files
 ~$*
+
+# Research Paper files
+AgroVoice_XAI_Research_Paper.*
+
